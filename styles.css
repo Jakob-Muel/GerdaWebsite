@@ -611,7 +611,7 @@ h2 {
 
 .membership {
   display: grid;
-  grid-template-columns: minmax(16rem, 0.65fr) minmax(30rem, 1.35fr);
+  grid-template-columns: minmax(16rem, 0.65fr) minmax(0, 1.35fr);
   gap: clamp(3rem, 7vw, 8rem);
   background: var(--cream);
 }
@@ -636,8 +636,11 @@ h2 {
 .membership-card {
   position: relative;
   display: grid;
-  grid-template-columns: 3rem minmax(min-content, 1fr) minmax(14rem, 1.1fr) auto;
-  gap: 1.3rem;
+  grid-template-columns: 3rem minmax(0, 1fr) auto;
+  grid-template-areas:
+    "num title link"
+    "num text text";
+  gap: 0.6rem 1.3rem;
   align-items: center;
   padding: 1.6rem;
   background: var(--white);
@@ -651,6 +654,7 @@ h2 {
 }
 
 .membership-card__number {
+  grid-area: num;
   font-weight: 800;
 }
 
@@ -661,12 +665,21 @@ h2 {
   text-transform: uppercase;
 }
 
+.membership-card h3 {
+  grid-area: title;
+}
+
+.membership-card > p:not(.membership-card__number) {
+  grid-area: text;
+}
+
 .membership-card p {
   margin-bottom: 0;
   line-height: 1.5;
 }
 
 .membership-card a {
+  grid-area: link;
   white-space: nowrap;
   text-underline-offset: 0.22em;
   font-weight: 800;
@@ -945,12 +958,15 @@ h2 {
   }
 
   .membership-card {
-    grid-template-columns: 2rem 1fr;
+    grid-template-columns: 2rem minmax(0, 1fr);
+    grid-template-areas:
+      "num title"
+      "num text"
+      "num link";
   }
 
-  .membership-card > p:not(.membership-card__number),
-  .membership-card > a {
-    grid-column: 2;
+  .membership-card a {
+    justify-self: start;
   }
 
   .contact address {
