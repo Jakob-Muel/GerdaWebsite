@@ -244,7 +244,7 @@ h2 {
   font-weight: 800;
 }
 
-\.button:hover,
+.button:hover,
 .button:focus-visible {
   box-shadow: 4px 4px 0 var(--cream);
 }
