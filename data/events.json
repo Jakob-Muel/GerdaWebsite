@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-29T18:40:02.345Z",
+  "updated": "2026-09-29T22:59:57.390Z",
   "events": [
     {
       "title": "Tu.wat.tage @Garage",
@@ -35,7 +35,7 @@
       "start": "2026-10-13T16:00:00.000Z",
       "end": "2026-10-13T17:00:00.000Z",
       "location": "",
-      "description": ""
+      "description": "Join with Google Meet: https://meet.google.com/ots-rdgp-dvt Learn more about Meet at: https://support.google.com/a/users/answer/9282720"
     },
     {
       "title": "Spielabend",
@@ -107,7 +107,7 @@
       "start": "2026-10-27T17:00:00.000Z",
       "end": "2026-10-27T18:00:00.000Z",
       "location": "",
-      "description": ""
+      "description": "Join with Google Meet: https://meet.google.com/ots-rdgp-dvt Learn more about Meet at: https://support.google.com/a/users/answer/9282720"
     },
     {
       "title": "Start 18:30",
@@ -161,7 +161,7 @@
       "start": "2026-11-10T17:00:00.000Z",
       "end": "2026-11-10T18:00:00.000Z",
       "location": "",
-      "description": ""
+      "description": "Join with Google Meet: https://meet.google.com/ots-rdgp-dvt Learn more about Meet at: https://support.google.com/a/users/answer/9282720"
     },
     {
       "title": "Start 18:30",
@@ -215,7 +215,7 @@
       "start": "2026-11-24T17:00:00.000Z",
       "end": "2026-11-24T18:00:00.000Z",
       "location": "",
-      "description": ""
+      "description": "Join with Google Meet: https://meet.google.com/ots-rdgp-dvt Learn more about Meet at: https://support.google.com/a/users/answer/9282720"
     },
     {
       "title": "Start 18:30",
@@ -287,7 +287,7 @@
       "start": "2026-12-08T17:00:00.000Z",
       "end": "2026-12-08T18:00:00.000Z",
       "location": "",
-      "description": ""
+      "description": "Join with Google Meet: https://meet.google.com/ots-rdgp-dvt Learn more about Meet at: https://support.google.com/a/users/answer/9282720"
     },
     {
       "title": "Start 18:30",
@@ -359,7 +359,7 @@
       "start": "2026-12-22T17:00:00.000Z",
       "end": "2026-12-22T18:00:00.000Z",
       "location": "",
-      "description": ""
+      "description": "Join with Google Meet: https://meet.google.com/ots-rdgp-dvt Learn more about Meet at: https://support.google.com/a/users/answer/9282720"
     },
     {
       "title": "Start 18:30",
@@ -395,7 +395,7 @@
       "start": "2027-01-05T17:00:00.000Z",
       "end": "2027-01-05T18:00:00.000Z",
       "location": "",
-      "description": ""
+      "description": "Join with Google Meet: https://meet.google.com/ots-rdgp-dvt Learn more about Meet at: https://support.google.com/a/users/answer/9282720"
     },
     {
       "title": "Start 18:30",
@@ -440,7 +440,7 @@
       "start": "2027-01-19T17:00:00.000Z",
       "end": "2027-01-19T18:00:00.000Z",
       "location": "",
-      "description": ""
+      "description": "Join with Google Meet: https://meet.google.com/ots-rdgp-dvt Learn more about Meet at: https://support.google.com/a/users/answer/9282720"
     },
     {
       "title": "Start 18:30",
@@ -448,15 +448,6 @@
       "allDay": false,
       "start": "2027-01-20T17:00:00.000Z",
       "end": "2027-01-20T21:00:00.000Z",
-      "location": "",
-      "description": ""
-    },
-    {
-      "title": "Schach Garage",
-      "tag": "",
-      "allDay": false,
-      "start": "2027-01-21T17:00:00.000Z",
-      "end": "2027-01-21T21:00:00.000Z",
       "location": "",
       "description": ""
     },
@@ -503,7 +494,7 @@
       "start": "2027-02-02T17:00:00.000Z",
       "end": "2027-02-02T18:00:00.000Z",
       "location": "",
-      "description": ""
+      "description": "Join with Google Meet: https://meet.google.com/ots-rdgp-dvt Learn more about Meet at: https://support.google.com/a/users/answer/9282720"
     },
     {
       "title": "Start 18:30",
@@ -548,7 +539,7 @@
       "start": "2027-02-16T17:00:00.000Z",
       "end": "2027-02-16T18:00:00.000Z",
       "location": "",
-      "description": ""
+      "description": "Join with Google Meet: https://meet.google.com/ots-rdgp-dvt Learn more about Meet at: https://support.google.com/a/users/answer/9282720"
     },
     {
       "title": "Start 18:30",
@@ -556,15 +547,6 @@
       "allDay": false,
       "start": "2027-02-17T17:00:00.000Z",
       "end": "2027-02-17T21:00:00.000Z",
-      "location": "",
-      "description": ""
-    },
-    {
-      "title": "Schach Garage",
-      "tag": "",
-      "allDay": false,
-      "start": "2027-02-18T17:00:00.000Z",
-      "end": "2027-02-18T21:00:00.000Z",
       "location": "",
       "description": ""
     },
@@ -596,6 +578,15 @@
       "description": ""
     },
     {
+      "title": "Schach Garage",
+      "tag": "",
+      "allDay": false,
+      "start": "2027-02-25T17:00:00.000Z",
+      "end": "2027-02-25T21:00:00.000Z",
+      "location": "",
+      "description": ""
+    },
+    {
       "title": "Literatur Garage",
       "tag": "",
       "allDay": false,
@@ -611,7 +602,7 @@
       "start": "2027-03-02T17:00:00.000Z",
       "end": "2027-03-02T18:00:00.000Z",
       "location": "",
-      "description": ""
+      "description": "Join with Google Meet: https://meet.google.com/ots-rdgp-dvt Learn more about Meet at: https://support.google.com/a/users/answer/9282720"
     },
     {
       "title": "Start 18:30",
@@ -656,7 +647,7 @@
       "start": "2027-03-16T17:00:00.000Z",
       "end": "2027-03-16T18:00:00.000Z",
       "location": "",
-      "description": ""
+      "description": "Join with Google Meet: https://meet.google.com/ots-rdgp-dvt Learn more about Meet at: https://support.google.com/a/users/answer/9282720"
     },
     {
       "title": "Start 18:30",
@@ -664,15 +655,6 @@
       "allDay": false,
       "start": "2027-03-17T17:00:00.000Z",
       "end": "2027-03-17T21:00:00.000Z",
-      "location": "",
-      "description": ""
-    },
-    {
-      "title": "Schach Garage",
-      "tag": "",
-      "allDay": false,
-      "start": "2027-03-18T17:00:00.000Z",
-      "end": "2027-03-18T21:00:00.000Z",
       "location": "",
       "description": ""
     },
@@ -713,13 +695,22 @@
       "description": ""
     },
     {
+      "title": "Schach Garage",
+      "tag": "",
+      "allDay": false,
+      "start": "2027-03-25T17:00:00.000Z",
+      "end": "2027-03-25T21:00:00.000Z",
+      "location": "",
+      "description": ""
+    },
+    {
       "title": "Allgemeines Plenum",
       "tag": "",
       "allDay": false,
       "start": "2027-03-30T16:00:00.000Z",
       "end": "2027-03-30T17:00:00.000Z",
       "location": "",
-      "description": ""
+      "description": "Join with Google Meet: https://meet.google.com/ots-rdgp-dvt Learn more about Meet at: https://support.google.com/a/users/answer/9282720"
     },
     {
       "title": "Start 18:30",
@@ -755,7 +746,7 @@
       "start": "2027-04-13T16:00:00.000Z",
       "end": "2027-04-13T17:00:00.000Z",
       "location": "",
-      "description": ""
+      "description": "Join with Google Meet: https://meet.google.com/ots-rdgp-dvt Learn more about Meet at: https://support.google.com/a/users/answer/9282720"
     },
     {
       "title": "Start 18:30",
@@ -763,15 +754,6 @@
       "allDay": false,
       "start": "2027-04-14T16:00:00.000Z",
       "end": "2027-04-14T20:00:00.000Z",
-      "location": "",
-      "description": ""
-    },
-    {
-      "title": "Schach Garage",
-      "tag": "",
-      "allDay": false,
-      "start": "2027-04-15T16:00:00.000Z",
-      "end": "2027-04-15T20:00:00.000Z",
       "location": "",
       "description": ""
     },
@@ -803,13 +785,22 @@
       "description": ""
     },
     {
+      "title": "Schach Garage",
+      "tag": "",
+      "allDay": false,
+      "start": "2027-04-22T16:00:00.000Z",
+      "end": "2027-04-22T20:00:00.000Z",
+      "location": "",
+      "description": ""
+    },
+    {
       "title": "Allgemeines Plenum",
       "tag": "",
       "allDay": false,
       "start": "2027-04-27T16:00:00.000Z",
       "end": "2027-04-27T17:00:00.000Z",
       "location": "",
-      "description": ""
+      "description": "Join with Google Meet: https://meet.google.com/ots-rdgp-dvt Learn more about Meet at: https://support.google.com/a/users/answer/9282720"
     },
     {
       "title": "Start 18:30",
@@ -845,7 +836,7 @@
       "start": "2027-05-11T16:00:00.000Z",
       "end": "2027-05-11T17:00:00.000Z",
       "location": "",
-      "description": ""
+      "description": "Join with Google Meet: https://meet.google.com/ots-rdgp-dvt Learn more about Meet at: https://support.google.com/a/users/answer/9282720"
     },
     {
       "title": "Start 18:30",
@@ -875,15 +866,6 @@
       "description": ""
     },
     {
-      "title": "Schach Garage",
-      "tag": "",
-      "allDay": false,
-      "start": "2027-05-20T16:00:00.000Z",
-      "end": "2027-05-20T20:00:00.000Z",
-      "location": "",
-      "description": ""
-    },
-    {
       "title": "Garage",
       "tag": "PubQuiz",
       "allDay": false,
@@ -899,7 +881,7 @@
       "start": "2027-05-25T16:00:00.000Z",
       "end": "2027-05-25T17:00:00.000Z",
       "location": "",
-      "description": ""
+      "description": "Join with Google Meet: https://meet.google.com/ots-rdgp-dvt Learn more about Meet at: https://support.google.com/a/users/answer/9282720"
     },
     {
       "title": "Start 18:30",
@@ -907,6 +889,15 @@
       "allDay": false,
       "start": "2027-05-26T16:00:00.000Z",
       "end": "2027-05-26T20:00:00.000Z",
+      "location": "",
+      "description": ""
+    },
+    {
+      "title": "Schach Garage",
+      "tag": "",
+      "allDay": false,
+      "start": "2027-05-27T16:00:00.000Z",
+      "end": "2027-05-27T20:00:00.000Z",
       "location": "",
       "description": ""
     },
@@ -935,7 +926,7 @@
       "start": "2027-06-08T16:00:00.000Z",
       "end": "2027-06-08T17:00:00.000Z",
       "location": "",
-      "description": ""
+      "description": "Join with Google Meet: https://meet.google.com/ots-rdgp-dvt Learn more about Meet at: https://support.google.com/a/users/answer/9282720"
     },
     {
       "title": "Start 18:30",
@@ -952,15 +943,6 @@
       "allDay": false,
       "start": "2027-06-16T16:00:00.000Z",
       "end": "2027-06-16T20:00:00.000Z",
-      "location": "",
-      "description": ""
-    },
-    {
-      "title": "Schach Garage",
-      "tag": "",
-      "allDay": false,
-      "start": "2027-06-17T16:00:00.000Z",
-      "end": "2027-06-17T20:00:00.000Z",
       "location": "",
       "description": ""
     },
@@ -989,7 +971,7 @@
       "start": "2027-06-22T16:00:00.000Z",
       "end": "2027-06-22T17:00:00.000Z",
       "location": "",
-      "description": ""
+      "description": "Join with Google Meet: https://meet.google.com/ots-rdgp-dvt Learn more about Meet at: https://support.google.com/a/users/answer/9282720"
     },
     {
       "title": "Start 18:30",
@@ -997,6 +979,15 @@
       "allDay": false,
       "start": "2027-06-23T16:00:00.000Z",
       "end": "2027-06-23T20:00:00.000Z",
+      "location": "",
+      "description": ""
+    },
+    {
+      "title": "Schach Garage",
+      "tag": "",
+      "allDay": false,
+      "start": "2027-06-24T16:00:00.000Z",
+      "end": "2027-06-24T20:00:00.000Z",
       "location": "",
       "description": ""
     }
