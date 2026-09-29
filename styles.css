@@ -636,7 +636,7 @@ h2 {
 .membership-card {
   position: relative;
   display: grid;
-  grid-template-columns: 3rem minmax(12rem, 0.8fr) minmax(14rem, 1.2fr) auto;
+  grid-template-columns: 3rem minmax(min-content, 1fr) minmax(14rem, 1.1fr) auto;
   gap: 1.3rem;
   align-items: center;
   padding: 1.6rem;
@@ -657,7 +657,7 @@ h2 {
 .membership-card h3 {
   margin: 0;
   font-family: var(--display);
-  font-size: clamp(1.8rem, 3vw, 2.7rem);
+  font-size: clamp(1.7rem, 2.6vw, 2.4rem);
   text-transform: uppercase;
 }
 
