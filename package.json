@@ -1,0 +1,7 @@
+{
+  "name": "gerda-website",
+  "private": true,
+  "type": "module",
+  "scripts": { "calendar": "node scripts/fetch-calendar.mjs" },
+  "dependencies": { "node-ical": "^0.20.1" }
+}

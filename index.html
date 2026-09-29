@@ -83,52 +83,19 @@
             <h2>Was läuft?</h2>
           </div>
           <p>
-            Workshops, Kultur und entspannte Abende. Hier zeigt der POC, wie kommende Termine
-            schnell erfassbar werden können.
+            Workshops, Kultur und entspannte Abende. Hier findest du alle kommenden Termine aus
+            unserem Gemeinschaftskalender.
           </p>
         </div>
 
-        <div class="filters" aria-label="Programm filtern">
-          <button type="button" class="filter is-active" data-filter="all">Alles</button>
-          <button type="button" class="filter" data-filter="machen">Machen</button>
-          <button type="button" class="filter" data-filter="treffen">Treffen</button>
-          <button type="button" class="filter" data-filter="kultur">Kultur</button>
+        <div class="agenda" data-agenda aria-live="polite">
+          <p class="agenda__status">Termine werden geladen …</p>
         </div>
 
-        <div class="event-grid">
-          <article class="event-card event-card--pink" data-category="machen">
-            <div class="event-card__date"><strong>DO</strong><span>18:00</span></div>
-            <div>
-              <p class="event-card__type">Offene Werkstatt</p>
-              <h3>Reparieren statt wegwerfen</h3>
-              <p>Komm mit deinem Projekt vorbei. Werkzeug, Wissen und helfende Hände sind da.</p>
-            </div>
-            <span class="event-card__arrow" aria-hidden="true">↗</span>
-          </article>
-
-          <article class="event-card event-card--cream" data-category="treffen">
-            <div class="event-card__date"><strong>FR</strong><span>19:00</span></div>
-            <div>
-              <p class="event-card__type">Nachbarschaft</p>
-              <h3>Spieleabend in der Garage</h3>
-              <p>Bring dein Lieblingsspiel mit – oder setz dich einfach dazu.</p>
-            </div>
-            <span class="event-card__arrow" aria-hidden="true">↗</span>
-          </article>
-
-          <article class="event-card event-card--coral" data-category="kultur">
-            <div class="event-card__date"><strong>SA</strong><span>20:00</span></div>
-            <div>
-              <p class="event-card__type">Kultur</p>
-              <h3>Bühne frei für neue Töne</h3>
-              <p>Live, laut, leise oder schräg: ein Abend für lokale Ideen.</p>
-            </div>
-            <span class="event-card__arrow" aria-hidden="true">↗</span>
-          </article>
-        </div>
+        <button type="button" class="agenda__more" data-agenda-more hidden>Mehr Termine anzeigen</button>
 
         <div class="program-note">
-          <span>* Beispieltermine für den POC</span>
+          <span data-agenda-updated></span>
           <a href="https://www.instagram.com/gerda_ktv/">Aktuelles Programm auf Instagram ↗</a>
         </div>
       </section>
