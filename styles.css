@@ -388,27 +388,6 @@ h2 {
   transform: rotate(2deg);
 }
 
-.hero__ticker {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  padding: 0.9rem 0;
-  color: var(--ink);
-  background: var(--pink);
-  border-top: var(--line);
-  font-family: var(--display);
-  font-size: 1.25rem;
-  letter-spacing: 0.04em;
-  white-space: nowrap;
-  overflow: hidden;
-}
-
-.hero__ticker div {
-  width: max-content;
-  animation: ticker 24s linear infinite;
-}
-
 .section {
   padding: clamp(5rem, 9vw, 9rem) clamp(1rem, 5vw, 5.5rem);
   border-bottom: var(--line);
@@ -671,21 +650,6 @@ h2 {
   transform: rotate(-1deg);
 }
 
-.membership-card__badge {
-  position: absolute;
-  top: -0.75rem;
-  right: 1rem;
-  padding: 0.42rem 0.65rem;
-  color: var(--cream);
-  background: var(--ink);
-  border: 1px solid var(--cream);
-  border-radius: 999px;
-  font-size: 0.68rem;
-  font-weight: 800;
-  letter-spacing: 0.09em;
-  text-transform: uppercase;
-}
-
 .membership-card__number {
   font-weight: 800;
 }
@@ -715,22 +679,6 @@ h2 {
   color: var(--cream);
   background: var(--ink-soft);
   overflow: hidden;
-}
-
-.contact__marquee {
-  position: absolute;
-  top: 0;
-  right: -3rem;
-  left: -3rem;
-  padding: 0.75rem;
-  color: var(--ink);
-  background: var(--yellow);
-  border-top: var(--line);
-  border-bottom: var(--line);
-  font-family: var(--display);
-  font-size: 1.35rem;
-  white-space: nowrap;
-  transform: rotate(-2deg);
 }
 
 .contact__content {
