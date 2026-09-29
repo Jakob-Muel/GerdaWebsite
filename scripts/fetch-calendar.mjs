@@ -101,8 +101,20 @@ for (const ev of Object.values(data)) {
 }
 
 out.sort((a, b) => a.start.localeCompare(b.start));
-await writeFile(
-  new URL("../data/events.json", import.meta.url),
-  JSON.stringify({ updated: new Date().toISOString(), events: out }, null, 2) + "\n",
-);
-console.log(`${out.length} Termine geschrieben`);
+
+// Nur schreiben, wenn sich Termine geändert haben. Sonst ändert der neue
+// Zeitstempel jede Stunde die Datei und der Workflow würde ständig committen.
+const outFile = new URL("../data/events.json", import.meta.url);
+let alt = null;
+try {
+  alt = JSON.parse(await readFile(outFile, "utf8"));
+} catch {
+  // Datei fehlt oder ist kaputt: neu schreiben
+}
+
+if (alt && JSON.stringify(alt.events) === JSON.stringify(out)) {
+  console.log("Keine Änderungen");
+} else {
+  await writeFile(outFile, JSON.stringify({ updated: new Date().toISOString(), events: out }, null, 2) + "\n");
+  console.log(`${out.length} Termine geschrieben`);
+}
