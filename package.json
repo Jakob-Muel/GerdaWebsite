@@ -2,6 +2,6 @@
   "name": "gerda-website",
   "private": true,
   "type": "module",
-  "scripts": { "calendar": "node scripts/fetch-calendar.mjs" },
+  "scripts": { "calendar": "TZ=UTC node scripts/fetch-calendar.mjs" },
   "dependencies": { "node-ical": "0.20.1" }
 }

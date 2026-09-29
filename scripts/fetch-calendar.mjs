@@ -3,6 +3,13 @@
 import ical from "node-ical";
 import { readFile, writeFile } from "node:fs/promises";
 
+// node-ical liefert Serientermine je nach Zeitzone des Prozesses unterschiedlich:
+// nur mit TZ=UTC sind es die echten Zeitpunkte (Sommer-/Winterzeit inklusive).
+// Deshalb immer über `npm run calendar` starten.
+if (new Date().getTimezoneOffset() !== 0) {
+  throw new Error("Bitte mit TZ=UTC starten (npm run calendar), sonst stimmen die Uhrzeiten von Serienterminen nicht.");
+}
+
 const CALENDAR_ID =
   "0985b7129fd4126f5453c820b056c876cc09d34e7527ea265feb26f70ac58038@group.calendar.google.com";
 const ICS_URL = `https://calendar.google.com/calendar/ical/${encodeURIComponent(CALENDAR_ID)}/public/basic.ics`;
@@ -30,26 +37,6 @@ const day = (d) => {
   return `${d.getFullYear()}-${p(d.getMonth() + 1)}-${p(d.getDate())}`;
 };
 const clean = (s) => (s ? String(s.val ?? s).replace(/\s+/g, " ").trim() : "");
-
-// Offset von Europe/Berlin in Minuten zu einem Zeitpunkt (Sommer-/Winterzeit)
-const berlinFmt = new Intl.DateTimeFormat("en-US", {
-  timeZone: "Europe/Berlin",
-  hourCycle: "h23",
-  year: "numeric", month: "numeric", day: "numeric",
-  hour: "numeric", minute: "numeric", second: "numeric",
-});
-function berlinOffset(date) {
-  const p = Object.fromEntries(berlinFmt.formatToParts(date).map((x) => [x.type, x.value]));
-  const asUtc = Date.UTC(p.year, p.month - 1, p.day, p.hour, p.minute, p.second);
-  return (asUtc - Math.floor(date.getTime() / 1000) * 1000) / 60000;
-}
-// node-ical liefert Wiederholungen mit Zeitzone als "Wanduhrzeit als UTC"
-// (18:00 Berlin erscheint als 18:00Z). Hier wird das in die echte Zeit umgerechnet,
-// inklusive Sommer-/Winterzeit.
-function wallToReal(wall) {
-  const guess = new Date(wall.getTime() - berlinOffset(wall) * 60000);
-  return new Date(wall.getTime() - berlinOffset(guess) * 60000);
-}
 
 const out = [];
 
@@ -92,8 +79,7 @@ for (const ev of Object.values(data)) {
       Object.values(ev.exdate ?? {}).map((d) => (isAllDay(ev) ? day(d) : d.toISOString())),
     );
     const search = new Date(until.getTime() + 2 * 24 * 3600 * 1000);
-    for (const raw of ev.rrule.between(new Date(from.getTime() - 2 * 24 * 3600 * 1000), search, true)) {
-      const s = ev.start.tz && !isAllDay(ev) ? wallToReal(raw) : raw;
+    for (const s of ev.rrule.between(new Date(from.getTime() - 2 * 24 * 3600 * 1000), search, true)) {
       const key = isAllDay(ev) ? day(s) : s.toISOString();
       if (skipped.has(key)) continue;
       const override = ev.recurrences?.[isAllDay(ev) ? day(s) : s.toISOString().slice(0, 10)];
