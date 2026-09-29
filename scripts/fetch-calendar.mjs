@@ -50,6 +50,8 @@ function wallToReal(wall) {
 const out = [];
 
 function push(ev, start, end) {
+  // abgesagte Termine (auch einzelne Termine einer Serie) nicht anzeigen
+  if (ev.status === "CANCELLED") return;
   const summary = clean(ev.summary);
   const description = clean(ev.description);
   const location = clean(ev.location);
