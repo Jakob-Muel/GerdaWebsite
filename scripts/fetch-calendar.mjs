@@ -9,8 +9,12 @@ const ICS_URL = `https://calendar.google.com/calendar/ical/${encodeURIComponent(
 const MONTHS_AHEAD = 9;
 
 const filter = JSON.parse(await readFile(new URL("../calendar-filter.json", import.meta.url), "utf8"));
-const blocked = filter.blockedWords.map((w) => w.toLowerCase());
-const isBlocked = (text) => blocked.some((w) => text.toLowerCase().includes(w));
+// Nur der Titel wird geprüft, und nur auf ganze Wörter ("Blockflöte" trifft "block" nicht)
+const escapeRegex = (s) => s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+const blocked = filter.blockedWords.map(
+  (w) => new RegExp(`(^|[^\\p{L}])${escapeRegex(w)}([^\\p{L}]|$)`, "iu"),
+);
+const isBlocked = (text) => blocked.some((re) => re.test(text));
 
 const data = await ical.async.fromURL(ICS_URL);
 
@@ -55,7 +59,7 @@ function push(ev, start, end) {
   const summary = clean(ev.summary);
   const description = clean(ev.description);
   const location = clean(ev.location);
-  if (!summary || isBlocked(`${summary} ${description}`)) return;
+  if (!summary || isBlocked(summary)) return;
 
   const allDay = isAllDay(ev);
   let endDate = end && end > start ? end : start;
