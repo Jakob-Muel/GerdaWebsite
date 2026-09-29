@@ -72,7 +72,7 @@ button {
 }
 
 .site-header {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
@@ -381,6 +381,7 @@ h2 {
 }
 
 .section {
+  scroll-margin-top: 5.4rem;
   padding: clamp(5rem, 9vw, 9rem) clamp(1rem, 5vw, 5.5rem);
   border-bottom: var(--line);
 }
