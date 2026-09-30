@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-30T02:10:00.958Z",
+  "updated": "2026-09-30T08:38:57.732Z",
   "events": [
     {
       "title": "Tu.wat.tage @Garage",
@@ -20,11 +20,11 @@
       "description": ""
     },
     {
-      "title": "Start 18:30",
-      "tag": "Fahrrad Werkstatt",
+      "title": "Fahrrad Garage",
+      "tag": "",
       "allDay": false,
-      "start": "2026-10-07T16:00:00.000Z",
-      "end": "2026-10-07T20:00:00.000Z",
+      "start": "2026-10-07T16:30:00.000Z",
+      "end": "2026-10-07T18:30:00.000Z",
       "location": "",
       "description": ""
     },
@@ -35,7 +35,7 @@
       "start": "2026-10-13T16:00:00.000Z",
       "end": "2026-10-13T17:00:00.000Z",
       "location": "",
-      "description": ""
+      "description": "Join with Google Meet: https://meet.google.com/ots-rdgp-dvt Learn more about Meet at: https://support.google.com/a/users/answer/9282720"
     },
     {
       "title": "Spielabend",
@@ -74,11 +74,11 @@
       "description": ""
     },
     {
-      "title": "Start 18:30",
-      "tag": "Fahrrad Werkstatt",
+      "title": "Fahrrad Garage",
+      "tag": "",
       "allDay": false,
-      "start": "2026-10-21T16:00:00.000Z",
-      "end": "2026-10-21T20:00:00.000Z",
+      "start": "2026-10-21T16:30:00.000Z",
+      "end": "2026-10-21T18:30:00.000Z",
       "location": "",
       "description": ""
     },
@@ -107,14 +107,14 @@
       "start": "2026-10-27T17:00:00.000Z",
       "end": "2026-10-27T18:00:00.000Z",
       "location": "",
-      "description": ""
+      "description": "Join with Google Meet: https://meet.google.com/ots-rdgp-dvt Learn more about Meet at: https://support.google.com/a/users/answer/9282720"
     },
     {
-      "title": "Start 18:30",
-      "tag": "Fahrrad Werkstatt",
+      "title": "Fahrrad Garage",
+      "tag": "",
       "allDay": false,
-      "start": "2026-10-28T17:00:00.000Z",
-      "end": "2026-10-28T21:00:00.000Z",
+      "start": "2026-10-28T17:30:00.000Z",
+      "end": "2026-10-28T19:30:00.000Z",
       "location": "",
       "description": ""
     },
@@ -128,11 +128,11 @@
       "description": ""
     },
     {
-      "title": "Start 18:30",
-      "tag": "Fahrrad Werkstatt",
+      "title": "Fahrrad Garage",
+      "tag": "",
       "allDay": false,
-      "start": "2026-11-04T17:00:00.000Z",
-      "end": "2026-11-04T21:00:00.000Z",
+      "start": "2026-11-04T17:30:00.000Z",
+      "end": "2026-11-04T19:30:00.000Z",
       "location": "",
       "description": ""
     },
@@ -161,14 +161,14 @@
       "start": "2026-11-10T17:00:00.000Z",
       "end": "2026-11-10T18:00:00.000Z",
       "location": "",
-      "description": ""
+      "description": "Join with Google Meet: https://meet.google.com/ots-rdgp-dvt Learn more about Meet at: https://support.google.com/a/users/answer/9282720"
     },
     {
-      "title": "Start 18:30",
-      "tag": "Fahrrad Werkstatt",
+      "title": "Fahrrad Garage",
+      "tag": "",
       "allDay": false,
-      "start": "2026-11-11T17:00:00.000Z",
-      "end": "2026-11-11T21:00:00.000Z",
+      "start": "2026-11-11T17:30:00.000Z",
+      "end": "2026-11-11T19:30:00.000Z",
       "location": "",
       "description": ""
     },
@@ -182,11 +182,11 @@
       "description": ""
     },
     {
-      "title": "Start 18:30",
-      "tag": "Fahrrad Werkstatt",
+      "title": "Fahrrad Garage",
+      "tag": "",
       "allDay": false,
-      "start": "2026-11-18T17:00:00.000Z",
-      "end": "2026-11-18T21:00:00.000Z",
+      "start": "2026-11-18T17:30:00.000Z",
+      "end": "2026-11-18T19:30:00.000Z",
       "location": "",
       "description": ""
     },
@@ -215,14 +215,14 @@
       "start": "2026-11-24T17:00:00.000Z",
       "end": "2026-11-24T18:00:00.000Z",
       "location": "",
-      "description": ""
+      "description": "Join with Google Meet: https://meet.google.com/ots-rdgp-dvt Learn more about Meet at: https://support.google.com/a/users/answer/9282720"
     },
     {
-      "title": "Start 18:30",
-      "tag": "Fahrrad Werkstatt",
+      "title": "Fahrrad Garage",
+      "tag": "",
       "allDay": false,
-      "start": "2026-11-25T17:00:00.000Z",
-      "end": "2026-11-25T21:00:00.000Z",
+      "start": "2026-11-25T17:30:00.000Z",
+      "end": "2026-11-25T19:30:00.000Z",
       "location": "",
       "description": ""
     },
@@ -245,11 +245,11 @@
       "description": ""
     },
     {
-      "title": "Start 18:30",
-      "tag": "Fahrrad Werkstatt",
+      "title": "Fahrrad Garage",
+      "tag": "",
       "allDay": false,
-      "start": "2026-12-02T17:00:00.000Z",
-      "end": "2026-12-02T21:00:00.000Z",
+      "start": "2026-12-02T17:30:00.000Z",
+      "end": "2026-12-02T19:30:00.000Z",
       "location": "",
       "description": ""
     },
@@ -287,14 +287,14 @@
       "start": "2026-12-08T17:00:00.000Z",
       "end": "2026-12-08T18:00:00.000Z",
       "location": "",
-      "description": ""
+      "description": "Join with Google Meet: https://meet.google.com/ots-rdgp-dvt Learn more about Meet at: https://support.google.com/a/users/answer/9282720"
     },
     {
-      "title": "Start 18:30",
-      "tag": "Fahrrad Werkstatt",
+      "title": "Fahrrad Garage",
+      "tag": "",
       "allDay": false,
-      "start": "2026-12-09T17:00:00.000Z",
-      "end": "2026-12-09T21:00:00.000Z",
+      "start": "2026-12-09T17:30:00.000Z",
+      "end": "2026-12-09T19:30:00.000Z",
       "location": "",
       "description": ""
     },
@@ -317,11 +317,11 @@
       "description": ""
     },
     {
-      "title": "Start 18:30",
-      "tag": "Fahrrad Werkstatt",
+      "title": "Fahrrad Garage",
+      "tag": "",
       "allDay": false,
-      "start": "2026-12-16T17:00:00.000Z",
-      "end": "2026-12-16T21:00:00.000Z",
+      "start": "2026-12-16T17:30:00.000Z",
+      "end": "2026-12-16T19:30:00.000Z",
       "location": "",
       "description": ""
     },
@@ -335,38 +335,29 @@
       "description": ""
     },
     {
-      "title": "Schach Garage",
-      "tag": "",
-      "allDay": false,
-      "start": "2026-12-17T17:00:00.000Z",
-      "end": "2026-12-17T21:00:00.000Z",
-      "location": "",
-      "description": ""
-    },
-    {
-      "title": "Garage",
-      "tag": "PubQuiz",
-      "allDay": false,
-      "start": "2026-12-17T18:00:00.000Z",
-      "end": "2026-12-17T22:00:00.000Z",
-      "location": "",
-      "description": ""
-    },
-    {
       "title": "Allgemeines Plenum",
       "tag": "",
       "allDay": false,
       "start": "2026-12-22T17:00:00.000Z",
       "end": "2026-12-22T18:00:00.000Z",
       "location": "",
+      "description": "Join with Google Meet: https://meet.google.com/ots-rdgp-dvt Learn more about Meet at: https://support.google.com/a/users/answer/9282720"
+    },
+    {
+      "title": "Fahrrad Garage",
+      "tag": "",
+      "allDay": false,
+      "start": "2026-12-23T17:30:00.000Z",
+      "end": "2026-12-23T19:30:00.000Z",
+      "location": "",
       "description": ""
     },
     {
-      "title": "Start 18:30",
-      "tag": "Fahrrad Werkstatt",
+      "title": "Schach-Garage",
+      "tag": "",
       "allDay": false,
-      "start": "2026-12-23T17:00:00.000Z",
-      "end": "2026-12-23T21:00:00.000Z",
+      "start": "2026-12-24T18:00:00.000Z",
+      "end": "2026-12-24T21:00:00.000Z",
       "location": "",
       "description": ""
     },
@@ -380,11 +371,11 @@
       "description": ""
     },
     {
-      "title": "Start 18:30",
-      "tag": "Fahrrad Werkstatt",
+      "title": "Fahrrad Garage",
+      "tag": "",
       "allDay": false,
-      "start": "2026-12-30T17:00:00.000Z",
-      "end": "2026-12-30T21:00:00.000Z",
+      "start": "2026-12-30T17:30:00.000Z",
+      "end": "2026-12-30T19:30:00.000Z",
       "location": "",
       "description": ""
     },
@@ -395,14 +386,14 @@
       "start": "2027-01-05T17:00:00.000Z",
       "end": "2027-01-05T18:00:00.000Z",
       "location": "",
-      "description": ""
+      "description": "Join with Google Meet: https://meet.google.com/ots-rdgp-dvt Learn more about Meet at: https://support.google.com/a/users/answer/9282720"
     },
     {
-      "title": "Start 18:30",
-      "tag": "Fahrrad Werkstatt",
+      "title": "Fahrrad Garage",
+      "tag": "",
       "allDay": false,
-      "start": "2027-01-06T17:00:00.000Z",
-      "end": "2027-01-06T21:00:00.000Z",
+      "start": "2027-01-06T17:30:00.000Z",
+      "end": "2027-01-06T19:30:00.000Z",
       "location": "",
       "description": ""
     },
@@ -425,11 +416,11 @@
       "description": ""
     },
     {
-      "title": "Start 18:30",
-      "tag": "Fahrrad Werkstatt",
+      "title": "Fahrrad Garage",
+      "tag": "",
       "allDay": false,
-      "start": "2027-01-13T17:00:00.000Z",
-      "end": "2027-01-13T21:00:00.000Z",
+      "start": "2027-01-13T17:30:00.000Z",
+      "end": "2027-01-13T19:30:00.000Z",
       "location": "",
       "description": ""
     },
@@ -440,14 +431,14 @@
       "start": "2027-01-19T17:00:00.000Z",
       "end": "2027-01-19T18:00:00.000Z",
       "location": "",
-      "description": ""
+      "description": "Join with Google Meet: https://meet.google.com/ots-rdgp-dvt Learn more about Meet at: https://support.google.com/a/users/answer/9282720"
     },
     {
-      "title": "Start 18:30",
-      "tag": "Fahrrad Werkstatt",
+      "title": "Fahrrad Garage",
+      "tag": "",
       "allDay": false,
-      "start": "2027-01-20T17:00:00.000Z",
-      "end": "2027-01-20T21:00:00.000Z",
+      "start": "2027-01-20T17:30:00.000Z",
+      "end": "2027-01-20T19:30:00.000Z",
       "location": "",
       "description": ""
     },
@@ -479,11 +470,20 @@
       "description": ""
     },
     {
-      "title": "Start 18:30",
-      "tag": "Fahrrad Werkstatt",
+      "title": "Fahrrad Garage",
+      "tag": "",
       "allDay": false,
-      "start": "2027-01-27T17:00:00.000Z",
-      "end": "2027-01-27T21:00:00.000Z",
+      "start": "2027-01-27T17:30:00.000Z",
+      "end": "2027-01-27T19:30:00.000Z",
+      "location": "",
+      "description": ""
+    },
+    {
+      "title": "Schach-Garage",
+      "tag": "",
+      "allDay": false,
+      "start": "2027-01-28T18:00:00.000Z",
+      "end": "2027-01-28T21:00:00.000Z",
       "location": "",
       "description": ""
     },
@@ -494,14 +494,14 @@
       "start": "2027-02-02T17:00:00.000Z",
       "end": "2027-02-02T18:00:00.000Z",
       "location": "",
-      "description": ""
+      "description": "Join with Google Meet: https://meet.google.com/ots-rdgp-dvt Learn more about Meet at: https://support.google.com/a/users/answer/9282720"
     },
     {
-      "title": "Start 18:30",
-      "tag": "Fahrrad Werkstatt",
+      "title": "Fahrrad Garage",
+      "tag": "",
       "allDay": false,
-      "start": "2027-02-03T17:00:00.000Z",
-      "end": "2027-02-03T21:00:00.000Z",
+      "start": "2027-02-03T17:30:00.000Z",
+      "end": "2027-02-03T19:30:00.000Z",
       "location": "",
       "description": ""
     },
@@ -524,11 +524,11 @@
       "description": ""
     },
     {
-      "title": "Start 18:30",
-      "tag": "Fahrrad Werkstatt",
+      "title": "Fahrrad Garage",
+      "tag": "",
       "allDay": false,
-      "start": "2027-02-10T17:00:00.000Z",
-      "end": "2027-02-10T21:00:00.000Z",
+      "start": "2027-02-10T17:30:00.000Z",
+      "end": "2027-02-10T19:30:00.000Z",
       "location": "",
       "description": ""
     },
@@ -539,14 +539,14 @@
       "start": "2027-02-16T17:00:00.000Z",
       "end": "2027-02-16T18:00:00.000Z",
       "location": "",
-      "description": ""
+      "description": "Join with Google Meet: https://meet.google.com/ots-rdgp-dvt Learn more about Meet at: https://support.google.com/a/users/answer/9282720"
     },
     {
-      "title": "Start 18:30",
-      "tag": "Fahrrad Werkstatt",
+      "title": "Fahrrad Garage",
+      "tag": "",
       "allDay": false,
-      "start": "2027-02-17T17:00:00.000Z",
-      "end": "2027-02-17T21:00:00.000Z",
+      "start": "2027-02-17T17:30:00.000Z",
+      "end": "2027-02-17T19:30:00.000Z",
       "location": "",
       "description": ""
     },
@@ -569,11 +569,11 @@
       "description": ""
     },
     {
-      "title": "Start 18:30",
-      "tag": "Fahrrad Werkstatt",
+      "title": "Fahrrad Garage",
+      "tag": "",
       "allDay": false,
-      "start": "2027-02-24T17:00:00.000Z",
-      "end": "2027-02-24T21:00:00.000Z",
+      "start": "2027-02-24T17:30:00.000Z",
+      "end": "2027-02-24T19:30:00.000Z",
       "location": "",
       "description": ""
     },
@@ -582,6 +582,15 @@
       "tag": "",
       "allDay": false,
       "start": "2027-02-25T17:00:00.000Z",
+      "end": "2027-02-25T21:00:00.000Z",
+      "location": "",
+      "description": ""
+    },
+    {
+      "title": "Schach-Garage",
+      "tag": "",
+      "allDay": false,
+      "start": "2027-02-25T18:00:00.000Z",
       "end": "2027-02-25T21:00:00.000Z",
       "location": "",
       "description": ""
@@ -602,14 +611,14 @@
       "start": "2027-03-02T17:00:00.000Z",
       "end": "2027-03-02T18:00:00.000Z",
       "location": "",
-      "description": ""
+      "description": "Join with Google Meet: https://meet.google.com/ots-rdgp-dvt Learn more about Meet at: https://support.google.com/a/users/answer/9282720"
     },
     {
-      "title": "Start 18:30",
-      "tag": "Fahrrad Werkstatt",
+      "title": "Fahrrad Garage",
+      "tag": "",
       "allDay": false,
-      "start": "2027-03-03T17:00:00.000Z",
-      "end": "2027-03-03T21:00:00.000Z",
+      "start": "2027-03-03T17:30:00.000Z",
+      "end": "2027-03-03T19:30:00.000Z",
       "location": "",
       "description": ""
     },
@@ -632,11 +641,11 @@
       "description": ""
     },
     {
-      "title": "Start 18:30",
-      "tag": "Fahrrad Werkstatt",
+      "title": "Fahrrad Garage",
+      "tag": "",
       "allDay": false,
-      "start": "2027-03-10T17:00:00.000Z",
-      "end": "2027-03-10T21:00:00.000Z",
+      "start": "2027-03-10T17:30:00.000Z",
+      "end": "2027-03-10T19:30:00.000Z",
       "location": "",
       "description": ""
     },
@@ -647,14 +656,14 @@
       "start": "2027-03-16T17:00:00.000Z",
       "end": "2027-03-16T18:00:00.000Z",
       "location": "",
-      "description": ""
+      "description": "Join with Google Meet: https://meet.google.com/ots-rdgp-dvt Learn more about Meet at: https://support.google.com/a/users/answer/9282720"
     },
     {
-      "title": "Start 18:30",
-      "tag": "Fahrrad Werkstatt",
+      "title": "Fahrrad Garage",
+      "tag": "",
       "allDay": false,
-      "start": "2027-03-17T17:00:00.000Z",
-      "end": "2027-03-17T21:00:00.000Z",
+      "start": "2027-03-17T17:30:00.000Z",
+      "end": "2027-03-17T19:30:00.000Z",
       "location": "",
       "description": ""
     },
@@ -686,11 +695,11 @@
       "description": ""
     },
     {
-      "title": "Start 18:30",
-      "tag": "Fahrrad Werkstatt",
+      "title": "Fahrrad Garage",
+      "tag": "",
       "allDay": false,
-      "start": "2027-03-24T17:00:00.000Z",
-      "end": "2027-03-24T21:00:00.000Z",
+      "start": "2027-03-24T17:30:00.000Z",
+      "end": "2027-03-24T19:30:00.000Z",
       "location": "",
       "description": ""
     },
@@ -704,20 +713,29 @@
       "description": ""
     },
     {
+      "title": "Schach-Garage",
+      "tag": "",
+      "allDay": false,
+      "start": "2027-03-25T18:00:00.000Z",
+      "end": "2027-03-25T21:00:00.000Z",
+      "location": "",
+      "description": ""
+    },
+    {
       "title": "Allgemeines Plenum",
       "tag": "",
       "allDay": false,
       "start": "2027-03-30T16:00:00.000Z",
       "end": "2027-03-30T17:00:00.000Z",
       "location": "",
-      "description": ""
+      "description": "Join with Google Meet: https://meet.google.com/ots-rdgp-dvt Learn more about Meet at: https://support.google.com/a/users/answer/9282720"
     },
     {
-      "title": "Start 18:30",
-      "tag": "Fahrrad Werkstatt",
+      "title": "Fahrrad Garage",
+      "tag": "",
       "allDay": false,
-      "start": "2027-03-31T16:00:00.000Z",
-      "end": "2027-03-31T20:00:00.000Z",
+      "start": "2027-03-31T16:30:00.000Z",
+      "end": "2027-03-31T18:30:00.000Z",
       "location": "",
       "description": ""
     },
@@ -731,11 +749,11 @@
       "description": ""
     },
     {
-      "title": "Start 18:30",
-      "tag": "Fahrrad Werkstatt",
+      "title": "Fahrrad Garage",
+      "tag": "",
       "allDay": false,
-      "start": "2027-04-07T16:00:00.000Z",
-      "end": "2027-04-07T20:00:00.000Z",
+      "start": "2027-04-07T16:30:00.000Z",
+      "end": "2027-04-07T18:30:00.000Z",
       "location": "",
       "description": ""
     },
@@ -746,14 +764,14 @@
       "start": "2027-04-13T16:00:00.000Z",
       "end": "2027-04-13T17:00:00.000Z",
       "location": "",
-      "description": ""
+      "description": "Join with Google Meet: https://meet.google.com/ots-rdgp-dvt Learn more about Meet at: https://support.google.com/a/users/answer/9282720"
     },
     {
-      "title": "Start 18:30",
-      "tag": "Fahrrad Werkstatt",
+      "title": "Fahrrad Garage",
+      "tag": "",
       "allDay": false,
-      "start": "2027-04-14T16:00:00.000Z",
-      "end": "2027-04-14T20:00:00.000Z",
+      "start": "2027-04-14T16:30:00.000Z",
+      "end": "2027-04-14T18:30:00.000Z",
       "location": "",
       "description": ""
     },
@@ -776,11 +794,11 @@
       "description": ""
     },
     {
-      "title": "Start 18:30",
-      "tag": "Fahrrad Werkstatt",
+      "title": "Fahrrad Garage",
+      "tag": "",
       "allDay": false,
-      "start": "2027-04-21T16:00:00.000Z",
-      "end": "2027-04-21T20:00:00.000Z",
+      "start": "2027-04-21T16:30:00.000Z",
+      "end": "2027-04-21T18:30:00.000Z",
       "location": "",
       "description": ""
     },
@@ -794,29 +812,38 @@
       "description": ""
     },
     {
+      "title": "Schach-Garage",
+      "tag": "",
+      "allDay": false,
+      "start": "2027-04-22T17:00:00.000Z",
+      "end": "2027-04-22T20:00:00.000Z",
+      "location": "",
+      "description": ""
+    },
+    {
       "title": "Allgemeines Plenum",
       "tag": "",
       "allDay": false,
       "start": "2027-04-27T16:00:00.000Z",
       "end": "2027-04-27T17:00:00.000Z",
       "location": "",
-      "description": ""
+      "description": "Join with Google Meet: https://meet.google.com/ots-rdgp-dvt Learn more about Meet at: https://support.google.com/a/users/answer/9282720"
     },
     {
-      "title": "Start 18:30",
-      "tag": "Fahrrad Werkstatt",
+      "title": "Fahrrad Garage",
+      "tag": "",
       "allDay": false,
-      "start": "2027-04-28T16:00:00.000Z",
-      "end": "2027-04-28T20:00:00.000Z",
+      "start": "2027-04-28T16:30:00.000Z",
+      "end": "2027-04-28T18:30:00.000Z",
       "location": "",
       "description": ""
     },
     {
-      "title": "Start 18:30",
-      "tag": "Fahrrad Werkstatt",
+      "title": "Fahrrad Garage",
+      "tag": "",
       "allDay": false,
-      "start": "2027-05-05T16:00:00.000Z",
-      "end": "2027-05-05T20:00:00.000Z",
+      "start": "2027-05-05T16:30:00.000Z",
+      "end": "2027-05-05T18:30:00.000Z",
       "location": "",
       "description": ""
     },
@@ -836,14 +863,14 @@
       "start": "2027-05-11T16:00:00.000Z",
       "end": "2027-05-11T17:00:00.000Z",
       "location": "",
-      "description": ""
+      "description": "Join with Google Meet: https://meet.google.com/ots-rdgp-dvt Learn more about Meet at: https://support.google.com/a/users/answer/9282720"
     },
     {
-      "title": "Start 18:30",
-      "tag": "Fahrrad Werkstatt",
+      "title": "Fahrrad Garage",
+      "tag": "",
       "allDay": false,
-      "start": "2027-05-12T16:00:00.000Z",
-      "end": "2027-05-12T20:00:00.000Z",
+      "start": "2027-05-12T16:30:00.000Z",
+      "end": "2027-05-12T18:30:00.000Z",
       "location": "",
       "description": ""
     },
@@ -857,11 +884,11 @@
       "description": ""
     },
     {
-      "title": "Start 18:30",
-      "tag": "Fahrrad Werkstatt",
+      "title": "Fahrrad Garage",
+      "tag": "",
       "allDay": false,
-      "start": "2027-05-19T16:00:00.000Z",
-      "end": "2027-05-19T20:00:00.000Z",
+      "start": "2027-05-19T16:30:00.000Z",
+      "end": "2027-05-19T18:30:00.000Z",
       "location": "",
       "description": ""
     },
@@ -881,14 +908,14 @@
       "start": "2027-05-25T16:00:00.000Z",
       "end": "2027-05-25T17:00:00.000Z",
       "location": "",
-      "description": ""
+      "description": "Join with Google Meet: https://meet.google.com/ots-rdgp-dvt Learn more about Meet at: https://support.google.com/a/users/answer/9282720"
     },
     {
-      "title": "Start 18:30",
-      "tag": "Fahrrad Werkstatt",
+      "title": "Fahrrad Garage",
+      "tag": "",
       "allDay": false,
-      "start": "2027-05-26T16:00:00.000Z",
-      "end": "2027-05-26T20:00:00.000Z",
+      "start": "2027-05-26T16:30:00.000Z",
+      "end": "2027-05-26T18:30:00.000Z",
       "location": "",
       "description": ""
     },
@@ -902,11 +929,20 @@
       "description": ""
     },
     {
-      "title": "Start 18:30",
-      "tag": "Fahrrad Werkstatt",
+      "title": "Schach-Garage",
+      "tag": "",
       "allDay": false,
-      "start": "2027-06-02T16:00:00.000Z",
-      "end": "2027-06-02T20:00:00.000Z",
+      "start": "2027-05-27T17:00:00.000Z",
+      "end": "2027-05-27T20:00:00.000Z",
+      "location": "",
+      "description": ""
+    },
+    {
+      "title": "Fahrrad Garage",
+      "tag": "",
+      "allDay": false,
+      "start": "2027-06-02T16:30:00.000Z",
+      "end": "2027-06-02T18:30:00.000Z",
       "location": "",
       "description": ""
     },
@@ -926,23 +962,23 @@
       "start": "2027-06-08T16:00:00.000Z",
       "end": "2027-06-08T17:00:00.000Z",
       "location": "",
-      "description": ""
+      "description": "Join with Google Meet: https://meet.google.com/ots-rdgp-dvt Learn more about Meet at: https://support.google.com/a/users/answer/9282720"
     },
     {
-      "title": "Start 18:30",
-      "tag": "Fahrrad Werkstatt",
+      "title": "Fahrrad Garage",
+      "tag": "",
       "allDay": false,
-      "start": "2027-06-09T16:00:00.000Z",
-      "end": "2027-06-09T20:00:00.000Z",
+      "start": "2027-06-09T16:30:00.000Z",
+      "end": "2027-06-09T18:30:00.000Z",
       "location": "",
       "description": ""
     },
     {
-      "title": "Start 18:30",
-      "tag": "Fahrrad Werkstatt",
+      "title": "Fahrrad Garage",
+      "tag": "",
       "allDay": false,
-      "start": "2027-06-16T16:00:00.000Z",
-      "end": "2027-06-16T20:00:00.000Z",
+      "start": "2027-06-16T16:30:00.000Z",
+      "end": "2027-06-16T18:30:00.000Z",
       "location": "",
       "description": ""
     },
@@ -971,14 +1007,14 @@
       "start": "2027-06-22T16:00:00.000Z",
       "end": "2027-06-22T17:00:00.000Z",
       "location": "",
-      "description": ""
+      "description": "Join with Google Meet: https://meet.google.com/ots-rdgp-dvt Learn more about Meet at: https://support.google.com/a/users/answer/9282720"
     },
     {
-      "title": "Start 18:30",
-      "tag": "Fahrrad Werkstatt",
+      "title": "Fahrrad Garage",
+      "tag": "",
       "allDay": false,
-      "start": "2027-06-23T16:00:00.000Z",
-      "end": "2027-06-23T20:00:00.000Z",
+      "start": "2027-06-23T16:30:00.000Z",
+      "end": "2027-06-23T18:30:00.000Z",
       "location": "",
       "description": ""
     },
@@ -987,6 +1023,15 @@
       "tag": "",
       "allDay": false,
       "start": "2027-06-24T16:00:00.000Z",
+      "end": "2027-06-24T20:00:00.000Z",
+      "location": "",
+      "description": ""
+    },
+    {
+      "title": "Schach-Garage",
+      "tag": "",
+      "allDay": false,
+      "start": "2027-06-24T17:00:00.000Z",
       "end": "2027-06-24T20:00:00.000Z",
       "location": "",
       "description": ""
