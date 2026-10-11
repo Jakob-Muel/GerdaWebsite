@@ -15,6 +15,7 @@ navigation?.addEventListener("click", (event) => {
 });
 
 const agenda = document.querySelector("[data-agenda]");
+const today = document.querySelector("[data-today]");
 const moreButton = document.querySelector("[data-agenda-more]");
 const updatedNote = document.querySelector("[data-agenda-updated]");
 const PAGE_SIZE = 10;
@@ -30,12 +31,59 @@ const fmt = {
 
 // Ganztägige Termine kommen als "YYYY-MM-DD", alle anderen als ISO-Zeitpunkt.
 const toDate = (value, allDay) => (allDay ? new Date(`${value}T12:00:00Z`) : new Date(value));
+// Kalendertag in Berlin als "YYYY-MM-DD"
+const dayKey = (date) => new Intl.DateTimeFormat("en-CA", { timeZone: TZ }).format(date);
+const eventDays = (event) =>
+  event.allDay ? [event.start, event.end] : [dayKey(new Date(event.start)), dayKey(new Date(event.end))];
+
+// Zum Testen: ?heute=2026-10-13 tut so, als wäre es dieser Tag (12 Uhr)
+const testDay = new URLSearchParams(location.search).get("heute");
+const getNow = () => (/^\d{4}-\d{2}-\d{2}$/.test(testDay ?? "") ? new Date(`${testDay}T10:00:00Z`) : new Date());
 
 function el(tag, className, text) {
   const node = document.createElement(tag);
   if (className) node.className = className;
   if (text) node.textContent = text;
   return node;
+}
+
+// Text mit klickbaren Links, ohne innerHTML
+function textWithLinks(className, text) {
+  const node = el("p", className);
+  text.split(/(https?:\/\/\S+)/).forEach((part, i) => {
+    if (i % 2 === 0) {
+      node.append(part);
+      return;
+    }
+    const link = el("a", "", part);
+    link.href = part;
+    node.append(link);
+  });
+  return node;
+}
+
+function timeText(event) {
+  if (event.allDay) return event.start === event.end ? "Ganztägig" : "Mehrtägig";
+  const start = new Date(event.start);
+  const end = new Date(event.end);
+  const endText = end > start ? ` – ${fmt.time.format(end)}` : "";
+  return `${fmt.time.format(start)}${endText} Uhr`;
+}
+
+function renderToday(event) {
+  const item = el("article", "today-item");
+  const head = el("div");
+  head.append(el("p", "today-item__label", "Heute"));
+  if (event.tag) head.append(el("p", "today-item__tag", event.tag));
+  head.append(el("h3", "", event.title));
+
+  const meta = el("p", "today-item__meta", timeText(event));
+  if (event.location) meta.append(el("span", "", event.location));
+  head.append(meta);
+  item.append(head);
+
+  if (event.description) item.append(textWithLinks("today-item__text", event.description));
+  return item;
 }
 
 function renderEvent(event) {
@@ -48,16 +96,9 @@ function renderEvent(event) {
   const body = el("div");
   if (event.tag) body.append(el("p", "agenda-item__tag", event.tag));
   body.append(el("h3", "", event.title));
-  if (event.description) body.append(el("p", "agenda-item__text", event.description));
 
   const meta = el("div", "agenda-item__meta");
-  if (event.allDay) {
-    meta.append(el("span", "", event.start === event.end ? "Ganztägig" : "Mehrtägig"));
-  } else {
-    const end = new Date(event.end);
-    const endText = end > start ? ` – ${fmt.time.format(end)}` : "";
-    meta.append(el("span", "", `${fmt.time.format(start)}${endText} Uhr`));
-  }
+  meta.append(el("span", "", timeText(event)));
   if (event.location) meta.append(el("span", "", event.location));
 
   item.append(date, body, meta);
@@ -93,10 +134,22 @@ async function loadEvents() {
     if (!response.ok) throw new Error(response.statusText);
     const data = await response.json();
     const updated = data.updated;
-    const now = new Date();
-    const events = data.events.filter((event) =>
+    const now = getNow();
+    const todayKey = dayKey(now);
+    const upcoming = data.events.filter((event) =>
       event.allDay ? toDate(event.end, true).getTime() + 12 * 3600 * 1000 > now : new Date(event.end) > now,
     );
+    const isToday = (event) => {
+      const [first, last] = eventDays(event);
+      return first <= todayKey && todayKey <= last;
+    };
+    const todays = upcoming.filter(isToday);
+    const events = upcoming.filter((event) => !isToday(event));
+
+    if (today && todays.length) {
+      today.replaceChildren(...todays.map(renderToday));
+      today.hidden = false;
+    }
     if (!events.length) {
       agenda.replaceChildren(el("p", "agenda__status", "Aktuell sind keine Termine eingetragen. Schau bei Instagram vorbei."));
       return;

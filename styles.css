@@ -418,6 +418,84 @@ h2 {
   gap: 0.9rem;
 }
 
+.today {
+  display: grid;
+  gap: 1.2rem;
+  margin-bottom: 2.4rem;
+}
+
+.today[hidden] {
+  display: none;
+}
+
+.today-item {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 1.2rem clamp(1.5rem, 4vw, 3.5rem);
+  align-items: end;
+  padding: clamp(1.4rem, 3vw, 2.4rem);
+  background: var(--white);
+  border: var(--line);
+  border-radius: var(--radius);
+  box-shadow: 0.6rem 0.6rem 0 var(--wine);
+}
+
+.today-item__label {
+  display: inline-block;
+  margin: 0 0 1rem;
+  padding: 0.35rem 0.8rem;
+  background: var(--wine);
+  border-radius: 999px;
+  color: var(--cream);
+}
+
+.today-item__label,
+.today-item__tag,
+.today-item__meta {
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.today-item__tag {
+  margin: 0 0 0.4rem;
+}
+
+.today-item h3 {
+  margin: 0;
+  font-family: var(--display);
+  font-size: clamp(2.4rem, 6vw, 4.2rem);
+  line-height: 0.95;
+  text-transform: uppercase;
+  overflow-wrap: anywhere;
+}
+
+.today-item__meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 1.2rem;
+  margin: 1rem 0 0;
+}
+
+.today-item > :only-child {
+  grid-column: 1 / -1;
+}
+
+.today-item__text {
+  margin: 0;
+  max-width: 36rem;
+  font-size: 1.05rem;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+}
+
+.today-item__text a {
+  color: var(--wine);
+  font-weight: 700;
+  text-underline-offset: 0.22em;
+}
+
 .agenda__month {
   margin: 1.6rem 0 0.2rem;
   font-family: var(--display);
@@ -475,12 +553,6 @@ h2 {
   font-size: clamp(1.5rem, 2.6vw, 2.1rem);
   line-height: 1;
   text-transform: uppercase;
-}
-
-.agenda-item__text {
-  margin: 0.5rem 0 0;
-  max-width: 40rem;
-  line-height: 1.5;
 }
 
 .agenda-item__meta {
@@ -613,11 +685,6 @@ h2 {
   background: var(--white);
   border: var(--line);
   border-radius: var(--radius);
-}
-
-.membership-card--featured {
-  background: var(--pink);
-  transform: rotate(-1deg);
 }
 
 .membership-card__number {
@@ -881,6 +948,10 @@ h2 {
 
   .agenda-item {
     grid-template-columns: 4rem minmax(0, 1fr);
+  }
+
+  .today-item {
+    grid-template-columns: 1fr;
   }
 
   .agenda-item__meta {
