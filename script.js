@@ -36,8 +36,9 @@ const dayKey = (date) => new Intl.DateTimeFormat("en-CA", { timeZone: TZ }).form
 const eventDays = (event) =>
   event.allDay ? [event.start, event.end] : [dayKey(new Date(event.start)), dayKey(new Date(event.end))];
 
-// Zum Testen: ?heute=2026-10-13 tut so, als wäre es dieser Tag (12 Uhr)
-const testDay = new URLSearchParams(location.search).get("heute");
+// Zum Testen, nur lokal: ?heute=2026-10-13 tut so, als wäre es dieser Tag (12 Uhr)
+const isLocal = ["localhost", "127.0.0.1", "[::1]"].includes(location.hostname);
+const testDay = isLocal ? new URLSearchParams(location.search).get("heute") : null;
 const getNow = () => (/^\d{4}-\d{2}-\d{2}$/.test(testDay ?? "") ? new Date(`${testDay}T10:00:00Z`) : new Date());
 
 function el(tag, className, text) {
