@@ -145,6 +145,7 @@ button {
   background: var(--pink);
   border: 1px solid var(--pink);
   border-radius: 999px;
+  text-decoration: none;
 }
 
 .nav-cta:hover {
@@ -591,6 +592,28 @@ h2 {
   text-underline-offset: 0.22em;
 }
 
+.program-note__links {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem 1.4rem;
+  flex-wrap: wrap;
+}
+
+.program-note__add {
+  padding: 0.65rem 1rem;
+  color: var(--cream);
+  background: var(--ink);
+  border: var(--line);
+  border-radius: 999px;
+  text-decoration: none;
+}
+
+.program-note__add:hover,
+.program-note__add:focus-visible {
+  color: var(--ink);
+  background: var(--pink);
+}
+
 .about {
   color: var(--cream);
   background: var(--wine);
@@ -675,10 +698,10 @@ h2 {
 .membership-card {
   position: relative;
   display: grid;
-  grid-template-columns: 3rem minmax(0, 1fr) auto;
+  grid-template-columns: 3rem minmax(0, 1fr);
   grid-template-areas:
-    "num title link"
-    "num text text";
+    "num title"
+    "num text";
   gap: 0.6rem 1.3rem;
   align-items: center;
   padding: 1.6rem;
@@ -712,11 +735,79 @@ h2 {
   line-height: 1.5;
 }
 
-.membership-card a {
-  grid-area: link;
-  white-space: nowrap;
-  text-underline-offset: 0.22em;
-  font-weight: 800;
+.membership__cta {
+  justify-self: start;
+  margin-top: 0.6rem;
+}
+
+.membership__contact {
+  display: flex;
+  grid-column: 1 / -1;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem 2rem;
+  padding-top: 2rem;
+  border-top: var(--line);
+  flex-wrap: wrap;
+}
+
+.membership__contact p {
+  max-width: 34rem;
+  margin: 0;
+  font-size: 1.08rem;
+  line-height: 1.55;
+}
+
+.membership__contact .button:hover,
+.membership__contact .button:focus-visible {
+  background: var(--pink);
+  box-shadow: 4px 4px 0 var(--ink);
+}
+
+.legal {
+  max-width: 52rem;
+  padding: calc(5.4rem + clamp(3rem, 7vw, 6rem)) clamp(1rem, 5vw, 5.5rem) clamp(4rem, 8vw, 7rem);
+}
+
+.legal h1 {
+  margin: 0 0 clamp(2rem, 5vw, 3.5rem);
+  font-size: clamp(3.4rem, 10vw, 7.5rem);
+  line-height: 0.85;
+  overflow-wrap: anywhere;
+}
+
+.legal h2 {
+  margin: 2.6rem 0 0.8rem;
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  line-height: 1;
+}
+
+.legal h3 {
+  margin: 1.6rem 0 0.4rem;
+  font-size: 1.05rem;
+}
+
+.legal p,
+.legal li,
+.legal address {
+  font-size: 1.02rem;
+  font-style: normal;
+  line-height: 1.6;
+}
+
+.legal ul {
+  padding-left: 1.2rem;
+}
+
+.legal a {
+  text-underline-offset: 0.2em;
+  overflow-wrap: anywhere;
+}
+
+.legal__updated {
+  margin-top: 3rem;
+  font-size: 0.85rem;
+  opacity: 0.7;
 }
 
 .contact {
@@ -977,14 +1068,6 @@ h2 {
 
   .membership-card {
     grid-template-columns: 2rem minmax(0, 1fr);
-    grid-template-areas:
-      "num title"
-      "num text"
-      "num link";
-  }
-
-  .membership-card a {
-    justify-self: start;
   }
 
   .contact address {

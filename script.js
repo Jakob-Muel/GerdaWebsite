@@ -144,8 +144,11 @@ async function loadEvents() {
       const [first, last] = eventDays(event);
       return first <= todayKey && todayKey <= last;
     };
+    // Liste nur bis zum Ende des übernächsten Monats (Mitte Oktober → 31. Dezember)
+    const [year, month] = todayKey.split("-").map(Number);
+    const limitKey = new Date(Date.UTC(year, month + 2, 0)).toISOString().slice(0, 10);
     const todays = upcoming.filter(isToday);
-    const events = upcoming.filter((event) => !isToday(event));
+    const events = upcoming.filter((event) => !isToday(event) && eventDays(event)[0] <= limitKey);
 
     if (today && todays.length) {
       today.replaceChildren(...todays.map(renderToday));
