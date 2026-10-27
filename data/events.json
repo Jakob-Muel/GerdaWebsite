@@ -1,15 +1,6 @@
 {
-  "updated": "2026-10-27T13:17:29.271Z",
+  "updated": "2026-10-27T19:27:12.589Z",
   "events": [
-    {
-      "title": "Allgemeines Plenum",
-      "tag": "",
-      "allDay": false,
-      "start": "2026-10-27T17:00:00.000Z",
-      "end": "2026-10-27T18:00:00.000Z",
-      "location": "",
-      "description": ""
-    },
     {
       "title": "Fahrrad Garage",
       "tag": "",
@@ -49,9 +40,27 @@
     {
       "title": "Konzert Sandra",
       "tag": "",
-      "allDay": true,
-      "start": "2026-11-06",
-      "end": "2026-11-06",
+      "allDay": false,
+      "start": "2026-11-06T18:30:00.000Z",
+      "end": "2026-11-06T21:00:00.000Z",
+      "location": "",
+      "description": ""
+    },
+    {
+      "title": "FilmAbend",
+      "tag": "DokuMentArt",
+      "allDay": false,
+      "start": "2026-11-08T18:00:00.000Z",
+      "end": "2026-11-08T22:00:00.000Z",
+      "location": "",
+      "description": ""
+    },
+    {
+      "title": "Jakkolo Garage",
+      "tag": "",
+      "allDay": false,
+      "start": "2026-11-09T17:30:00.000Z",
+      "end": "2026-11-09T21:30:00.000Z",
       "location": "",
       "description": ""
     },
@@ -137,6 +146,15 @@
       "description": ""
     },
     {
+      "title": "SpieleAbend",
+      "tag": "",
+      "allDay": false,
+      "start": "2026-11-26T17:00:00.000Z",
+      "end": "2026-11-26T21:00:00.000Z",
+      "location": "",
+      "description": ""
+    },
+    {
       "title": "Film Garage",
       "tag": "",
       "allDay": false,
@@ -164,11 +182,11 @@
       "description": ""
     },
     {
-      "title": "Garage",
-      "tag": "PubQuiz",
+      "title": "Weihnachtsspecial",
+      "tag": "LiveMusik Garage",
       "allDay": false,
-      "start": "2026-12-03T18:00:00.000Z",
-      "end": "2026-12-03T22:00:00.000Z",
+      "start": "2026-12-03T18:30:00.000Z",
+      "end": "2026-12-03T21:00:00.000Z",
       "location": "",
       "description": ""
     },
@@ -209,6 +227,15 @@
       "description": ""
     },
     {
+      "title": "Wird noch veröffentlicht.",
+      "tag": "",
+      "allDay": false,
+      "start": "2026-12-10T17:00:00.000Z",
+      "end": "2026-12-10T21:00:00.000Z",
+      "location": "",
+      "description": ""
+    },
+    {
       "title": "Film Garage",
       "tag": "",
       "allDay": false,
@@ -232,6 +259,15 @@
       "allDay": true,
       "start": "2026-12-17",
       "end": "2026-12-17",
+      "location": "",
+      "description": ""
+    },
+    {
+      "title": "WeihnachtsParty",
+      "tag": "",
+      "allDay": false,
+      "start": "2026-12-17T17:00:00.000Z",
+      "end": "2026-12-17T21:00:00.000Z",
       "location": "",
       "description": ""
     },
