@@ -1,15 +1,6 @@
 {
-  "updated": "2026-10-28T18:53:36.993Z",
+  "updated": "2026-10-28T23:15:50.719Z",
   "events": [
-    {
-      "title": "Fahrrad Garage",
-      "tag": "",
-      "allDay": false,
-      "start": "2026-10-28T17:30:00.000Z",
-      "end": "2026-10-28T19:30:00.000Z",
-      "location": "",
-      "description": ""
-    },
     {
       "title": "Film Garage",
       "tag": "",
@@ -194,8 +185,8 @@
       "title": "Literatur Garage",
       "tag": "",
       "allDay": false,
-      "start": "2026-12-05T15:00:00.000Z",
-      "end": "2026-12-05T18:30:00.000Z",
+      "start": "2026-12-05T14:00:00.000Z",
+      "end": "2026-12-05T17:00:00.000Z",
       "location": "",
       "description": ""
     },
