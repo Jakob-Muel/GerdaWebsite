@@ -13,7 +13,8 @@ if (new Date().getTimezoneOffset() !== 0) {
 const CALENDAR_ID =
   "0985b7129fd4126f5453c820b056c876cc09d34e7527ea265feb26f70ac58038@group.calendar.google.com";
 const ICS_URL = `https://calendar.google.com/calendar/ical/${encodeURIComponent(CALENDAR_ID)}/public/basic.ics`;
-const MONTHS_AHEAD = 9;
+// Die Seite zeigt höchstens bis Ende des übernächsten Monats
+const MONTHS_AHEAD = 3;
 
 const filter = JSON.parse(await readFile(new URL("../calendar-filter.json", import.meta.url), "utf8"));
 // Nur der Titel wird geprüft, und nur auf ganze Wörter ("Blockflöte" trifft "block" nicht)

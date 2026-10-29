@@ -7,7 +7,7 @@
       name="description"
       content="Gerda e.V. – Nachbarschaft, Kultur und offene Werkstatt im Herzen der KTV in Rostock."
     />
-    <meta name="theme-color" content="#7b1018" />
+    <meta name="theme-color" content="#11151b" />
     <meta property="og:title" content="Gerda e.V. – Raum für KTV" />
     <meta
       property="og:description"
@@ -21,7 +21,7 @@
   <body>
     <a class="skip-link" href="#inhalt">Zum Inhalt</a>
 
-    <header class="site-header" data-header>
+    <header class="site-header">
       <a class="brand" href="#top" aria-label="Gerda e.V. Startseite">
         <img src="public/gerdas-garage-logo.png" alt="Gerdas Garage" />
         <span>Gerda e.V.</span>
@@ -35,6 +35,7 @@
       <nav class="navigation" id="navigation" aria-label="Hauptnavigation">
         <a href="#programm">Was läuft?</a>
         <a href="#raum">Der Raum</a>
+        <a href="gallery/">Galerie</a>
         <a href="#mitgliedschaft">Mitmachen</a>
         <a class="nav-cta" href="https://easyverein.com/public/Gerda/applicationform/8693">Mitglied werden ↗</a>
       </nav>
@@ -89,6 +90,9 @@
         </div>
 
         <div class="today" data-today hidden></div>
+        <template data-today-art>
+          <svg class="talk-art" viewBox="0 0 320 210" aria-hidden="true" focusable="false" stroke="currentColor" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"><g fill="#fffdf7"><animate attributeName="fill" dur="8s" repeatCount="indefinite" calcMode="discrete" values="#fffdf7;#ef83b6;#fffdf7" keyTimes="0;0.0312;0.25" /><circle cx="52" cy="128" r="17" /><path d="M24 198V183Q24 158 52 158Q80 158 80 183V198Z" /><path d="M36 186V198M68 186V198" fill="none" /></g><g fill="#fffdf7"><animate attributeName="fill" dur="8s" repeatCount="indefinite" calcMode="discrete" values="#fffdf7;#ef83b6;#fffdf7" keyTimes="0;0.5312;0.75" /><circle cx="124" cy="128" r="17" /><path d="M96 198V183Q96 158 124 158Q152 158 152 183V198Z" /><path d="M108 186V198M140 186V198" fill="none" /></g><g fill="#fffdf7"><animate attributeName="fill" dur="8s" repeatCount="indefinite" calcMode="discrete" values="#fffdf7;#ef83b6;#fffdf7" keyTimes="0;0.2812;0.5" /><circle cx="196" cy="128" r="17" /><path d="M168 198V183Q168 158 196 158Q224 158 224 183V198Z" /><path d="M180 186V198M212 186V198" fill="none" /></g><g fill="#fffdf7"><animate attributeName="fill" dur="8s" repeatCount="indefinite" calcMode="discrete" values="#fffdf7;#ef83b6" keyTimes="0;0.7812" /><circle cx="268" cy="128" r="17" /><path d="M240 198V183Q240 158 268 158Q296 158 296 183V198Z" /><path d="M252 186V198M284 186V198" fill="none" /></g><rect x="40" y="14" width="240" height="64" rx="30" fill="#fffdf7" /><path fill="#fffdf7" stroke-linecap="butt" d="M78 75.0L60 102L102 75.0"><animate attributeName="d" dur="8s" repeatCount="indefinite" calcMode="spline" values="M218 75.0L260 102L242 75.0;M78 75.0L60 102L102 75.0;M78 75.0L60 102L102 75.0;M182 75.0L198 102L208 75.0;M182 75.0L198 102L208 75.0;M112 75.0L122 102L138 75.0;M112 75.0L122 102L138 75.0;M218 75.0L260 102L242 75.0;M218 75.0L260 102L242 75.0" keyTimes="0;0.0563;0.25;0.3063;0.5;0.5563;0.75;0.8063;1" keySplines="0.45 0 0.2 1;0 0 1 1;0.45 0 0.2 1;0 0 1 1;0.45 0 0.2 1;0 0 1 1;0.45 0 0.2 1;0 0 1 1" /></path><g fill="currentColor" stroke="none"><circle cx="142" cy="46" r="5.5"><animate attributeName="cy" dur="1.2s" begin="0s" repeatCount="indefinite" values="46;39;46;46" keyTimes="0;0.2;0.42;1" calcMode="spline" keySplines="0.3 0 0.4 1;0.6 0 0.7 1;0 0 1 1" /></circle><circle cx="160" cy="46" r="5.5"><animate attributeName="cy" dur="1.2s" begin="0.15s" repeatCount="indefinite" values="46;39;46;46" keyTimes="0;0.2;0.42;1" calcMode="spline" keySplines="0.3 0 0.4 1;0.6 0 0.7 1;0 0 1 1" /></circle><circle cx="178" cy="46" r="5.5"><animate attributeName="cy" dur="1.2s" begin="0.3s" repeatCount="indefinite" values="46;39;46;46" keyTimes="0;0.2;0.42;1" calcMode="spline" keySplines="0.3 0 0.4 1;0.6 0 0.7 1;0 0 1 1" /></circle></g></svg>
+        </template>
 
         <div class="agenda" data-agenda aria-live="polite">
           <p class="agenda__status">Termine werden geladen …</p>
@@ -99,8 +103,8 @@
         <div class="program-note">
           <span data-agenda-updated></span>
           <div class="program-note__links">
-            <a href="https://calendar.google.com/calendar/embed?src=0985b7129fd4126f5453c820b056c876cc09d34e7527ea265feb26f70ac58038%40group.calendar.google.com&amp;ctz=Europe%2FBerlin">Ganzer Kalender ↗</a>
-            <a class="program-note__add" href="https://calendar.google.com/calendar/r?cid=0985b7129fd4126f5453c820b056c876cc09d34e7527ea265feb26f70ac58038%40group.calendar.google.com">+ Kalender hinzufügen</a>
+            <a href="https://calendar.google.com/calendar/embed?src=0985b7129fd4126f5453c820b056c876cc09d34e7527ea265feb26f70ac58038%40group.calendar.google.com&amp;ctz=Europe%2FBerlin" target="_blank" rel="noopener">Ganzer Kalender ↗</a>
+            <a class="program-note__add" target="_blank" rel="noopener" href="https://calendar.google.com/calendar/r?cid=0985b7129fd4126f5453c820b056c876cc09d34e7527ea265feb26f70ac58038%40group.calendar.google.com">+ Kalender hinzufügen</a>
           </div>
         </div>
       </section>
@@ -150,18 +154,16 @@
         </div>
 
         <div class="membership__options">
+          <p class="eyebrow membership__options-title">Arten der Mitgliedschaft</p>
           <article class="membership-card">
-            <p class="membership-card__number">01</p>
             <h3>Probemitglied</h3>
             <p>Vier Wochen ausprobieren. Endet automatisch und ist zweimal im Jahr möglich.</p>
           </article>
           <article class="membership-card">
-            <p class="membership-card__number">02</p>
             <h3>Passives Mitglied</h3>
             <p>Du unterstützt den Verein und kannst an allen Workshops und Veranstaltungen teilnehmen.</p>
           </article>
           <article class="membership-card">
-            <p class="membership-card__number">03</p>
             <h3>Aktiv mitmachen</h3>
             <p>Du bringst dich ehrenamtlich ein oder organisierst eigene Projekte und Veranstaltungen.</p>
           </article>
@@ -202,8 +204,10 @@
       <div class="site-footer__legal">
         <a href="impressum/">Impressum</a>
         <a href="datenschutz/">Datenschutz</a>
+        <a href="public/gerda-satzung.pdf" target="_blank" rel="noopener">Satzung</a>
+        <a href="public/gerda-selbstverstaendnis.pdf" target="_blank" rel="noopener">Selbstverständnis</a>
       </div>
-      <p class="site-footer__note">POC · September 2026</p>
+      <p class="site-footer__note">Diese Webseite wurde gebaut von <a href="mailto:jakob.mueller.arbeit@gmail.com">jakob.mueller.arbeit@gmail.com</a> &lt;3</p>
     </footer>
   </body>
 </html>

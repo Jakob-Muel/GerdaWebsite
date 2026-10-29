@@ -1,4 +1,3 @@
-const header = document.querySelector("[data-header]");
 const menuButton = document.querySelector(".menu-button");
 const navigation = document.querySelector(".navigation");
 
@@ -18,6 +17,8 @@ const agenda = document.querySelector("[data-agenda]");
 const today = document.querySelector("[data-today]");
 const moreButton = document.querySelector("[data-agenda-more]");
 const updatedNote = document.querySelector("[data-agenda-updated]");
+const todayArt = document.querySelector("[data-today-art]");
+const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
 const PAGE_SIZE = 10;
 const TZ = "Europe/Berlin";
 
@@ -63,6 +64,13 @@ function textWithLinks(className, text) {
   return node;
 }
 
+// Den Text, den Google Calendar automatisch für Meet-Links anhängt, nicht anzeigen
+const MEET_TEXT = [
+  /(Join with Google Meet|Mit Google Meet teilnehmen):?\s*https:\/\/meet\.google\.com\/\S+/gi,
+  /(Learn more about Meet at|Weitere Informationen zu Meet):?\s*https:\/\/support\.google\.com\/\S+/gi,
+];
+const cleanDescription = (text = "") => MEET_TEXT.reduce((t, re) => t.replace(re, ""), text).trim();
+
 function timeText(event) {
   if (event.allDay) return event.start === event.end ? "Ganztägig" : "Mehrtägig";
   const start = new Date(event.start);
@@ -83,7 +91,16 @@ function renderToday(event) {
   head.append(meta);
   item.append(head);
 
-  if (event.description) item.append(textWithLinks("today-item__text", event.description));
+  // Kleine Animation beim Plenum: Leute im Gespräch, die Sprechblase wandert zwischen ihnen
+  const isPlenum = /plenum/i.test(`${event.tag} ${event.title}`);
+  const art = isPlenum && todayArt?.content.firstElementChild?.cloneNode(true);
+  if (art) {
+    item.append(art);
+    if (reduceMotion.matches) art.pauseAnimations?.();
+  }
+
+  const description = cleanDescription(event.description);
+  if (description) item.append(textWithLinks("today-item__text", description));
   return item;
 }
 

@@ -18,9 +18,6 @@
   box-sizing: border-box;
 }
 
-html {
-}
-
 body {
   margin: 0;
   color: var(--ink);
@@ -85,6 +82,17 @@ button {
   color: var(--cream);
   background: var(--ink);
   border-bottom: 1px solid rgba(246, 239, 219, 0.25);
+}
+
+/* Dunkle Fläche über dem Header, damit beim Überscrollen auf dem Handy nichts durchscheint */
+.site-header::before {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  height: 100vh;
+  content: "";
+  background: var(--ink);
 }
 
 .brand {
@@ -439,6 +447,7 @@ h2 {
   border: var(--line);
   border-radius: var(--radius);
   box-shadow: 0.6rem 0.6rem 0 var(--wine);
+  grid-template-areas: "head art" "head text";
 }
 
 .today-item__label {
@@ -483,7 +492,26 @@ h2 {
   grid-column: 1 / -1;
 }
 
+.today-item > div {
+  grid-area: head;
+}
+
+.today-item:not(:has(.today-item__text)) {
+  grid-template-areas: "head art";
+}
+
+.talk-art {
+  grid-area: art;
+  justify-self: end;
+  align-self: center;
+  width: clamp(10rem, 22vw, 15rem);
+  height: auto;
+  color: var(--ink);
+  overflow: visible;
+}
+
 .today-item__text {
+  grid-area: text;
   margin: 0;
   max-width: 36rem;
   font-size: 1.05rem;
@@ -696,23 +724,12 @@ h2 {
 }
 
 .membership-card {
-  position: relative;
   display: grid;
-  grid-template-columns: 3rem minmax(0, 1fr);
-  grid-template-areas:
-    "num title"
-    "num text";
-  gap: 0.6rem 1.3rem;
-  align-items: center;
+  gap: 0.6rem;
   padding: 1.6rem;
   background: var(--white);
   border: var(--line);
   border-radius: var(--radius);
-}
-
-.membership-card__number {
-  grid-area: num;
-  font-weight: 800;
 }
 
 .membership-card h3 {
@@ -722,17 +739,13 @@ h2 {
   text-transform: uppercase;
 }
 
-.membership-card h3 {
-  grid-area: title;
-}
-
-.membership-card > p:not(.membership-card__number) {
-  grid-area: text;
-}
-
 .membership-card p {
   margin-bottom: 0;
   line-height: 1.5;
+}
+
+.membership__options-title {
+  margin-bottom: 0.2rem;
 }
 
 .membership__cta {
@@ -762,6 +775,54 @@ h2 {
 .membership__contact .button:focus-visible {
   background: var(--pink);
   box-shadow: 4px 4px 0 var(--ink);
+}
+
+.gallery {
+  padding-top: calc(5.4rem + clamp(3rem, 6vw, 5rem));
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
+  gap: clamp(1.2rem, 3vw, 2.2rem);
+  align-items: start;
+}
+
+.gallery-item {
+  margin: 0;
+  padding: 0.6rem;
+  background: var(--white);
+  border: var(--line);
+  border-radius: 0.35rem;
+  box-shadow: 0.45rem 0.45rem 0 var(--ink);
+  transform: rotate(-1.2deg);
+}
+
+.gallery-item:nth-child(3n + 2) {
+  box-shadow: 0.45rem 0.45rem 0 var(--pink);
+  transform: rotate(1.4deg);
+}
+
+.gallery-item:nth-child(3n) {
+  box-shadow: 0.45rem 0.45rem 0 var(--wine);
+  transform: rotate(-0.4deg);
+}
+
+.gallery-item img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 0.2rem;
+  object-fit: cover;
+}
+
+/* Unterschiedliche Ausschnitte, damit das Raster lockerer wirkt */
+.gallery-item:nth-child(4n + 1) img {
+  aspect-ratio: 1;
+}
+
+.gallery-item:nth-child(4n + 2) img {
+  aspect-ratio: 4 / 5;
 }
 
 .legal {
@@ -886,27 +947,27 @@ h2 {
   border-radius: 50%;
 }
 
-.site-footer__brand p,
-.site-footer__note {
+.site-footer__brand p {
   margin: 0;
+  white-space: nowrap;
 }
 
 .site-footer__legal {
   display: flex;
   gap: 1.2rem;
+  flex-wrap: wrap;
   font-size: 0.82rem;
 }
 
 .site-footer__note {
+  max-width: 16rem;
+  margin: 0;
   color: rgba(246, 239, 219, 0.65);
   font-size: 0.75rem;
-  text-transform: uppercase;
 }
 
-@keyframes ticker {
-  to {
-    transform: translateX(-50%);
-  }
+.site-footer__note a {
+  text-underline-offset: 0.2em;
 }
 
 @media (max-width: 1050px) {
@@ -923,7 +984,6 @@ h2 {
   }
 
   .membership__intro {
-    position: static;
     max-width: 46rem;
   }
 }
@@ -960,7 +1020,7 @@ h2 {
     height: 2px;
     content: "";
     background: currentColor;
-    }
+  }
 
   .menu-button__lines {
     position: relative;
@@ -1018,10 +1078,6 @@ h2 {
     padding-top: 8rem;
   }
 
-  .hero__copy {
-    padding-bottom: 0;
-  }
-
   .hero h1 {
     font-size: clamp(5.2rem, 25vw, 9rem);
   }
@@ -1042,7 +1098,12 @@ h2 {
   }
 
   .today-item {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr) auto;
+    grid-template-areas: "head art" "text text";
+  }
+
+  .talk-art {
+    width: clamp(8rem, 24vw, 11rem);
   }
 
   .agenda-item__meta {
@@ -1066,10 +1127,6 @@ h2 {
     margin-bottom: 2rem;
   }
 
-  .membership-card {
-    grid-template-columns: 2rem minmax(0, 1fr);
-  }
-
   .contact address {
     min-width: 0;
   }
@@ -1084,6 +1141,17 @@ h2 {
 }
 
 @media (max-width: 520px) {
+  .today-item,
+  .today-item:not(:has(.today-item__text)) {
+    grid-template-columns: 1fr;
+    grid-template-areas: "art" "head" "text";
+  }
+
+  .talk-art {
+    justify-self: start;
+    width: 9.5rem;
+  }
+
   .brand span,
   .menu-button__label {
     display: none;
