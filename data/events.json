@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-28T23:15:50.719Z",
+  "updated": "2026-10-29T02:31:15.825Z",
   "events": [
     {
       "title": "Film Garage",
@@ -1060,6 +1060,15 @@
       "allDay": false,
       "start": "2027-07-22T17:00:00.000Z",
       "end": "2027-07-22T20:00:00.000Z",
+      "location": "",
+      "description": ""
+    },
+    {
+      "title": "Fahrrad Garage",
+      "tag": "",
+      "allDay": false,
+      "start": "2027-07-28T16:30:00.000Z",
+      "end": "2027-07-28T18:30:00.000Z",
       "location": "",
       "description": ""
     }
