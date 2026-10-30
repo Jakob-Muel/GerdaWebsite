@@ -9,6 +9,8 @@
   --yellow: #f4d45d;
   --white: #fffdf7;
   --line: 2px solid var(--ink);
+  /* iPhone: Bereich hinter der Statusleiste, die Seite läuft dort sonst sichtbar durch */
+  --safe-top: env(safe-area-inset-top, 0px);
   --radius: 1.25rem;
   --display: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   --sans: "Arial", "Helvetica Neue", sans-serif;
@@ -77,8 +79,8 @@ button {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 5.4rem;
-  padding: 0.65rem clamp(1rem, 3vw, 3.5rem);
+  height: calc(5.4rem + var(--safe-top));
+  padding: calc(0.65rem + var(--safe-top)) clamp(1rem, 3vw, 3.5rem) 0.65rem;
   color: var(--cream);
   background: var(--ink);
   border-bottom: 1px solid rgba(246, 239, 219, 0.25);
@@ -104,6 +106,10 @@ button {
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 0.04em;
+}
+
+.brand__name {
+  line-height: 1.15;
 }
 
 .brand img {
@@ -134,7 +140,7 @@ button {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(22rem, 0.86fr);
   min-height: 100svh;
-  padding: clamp(8rem, 13vw, 10rem) clamp(1rem, 5vw, 5.5rem) 6.5rem;
+  padding: calc(clamp(8rem, 13vw, 10rem) + var(--safe-top)) clamp(1rem, 5vw, 5.5rem) 6.5rem;
   color: var(--cream);
   background: var(--wine);
   border-bottom: var(--line);
@@ -369,7 +375,7 @@ h2 {
 }
 
 .section {
-  scroll-margin-top: 5.4rem;
+  scroll-margin-top: calc(5.4rem + var(--safe-top));
   padding: clamp(5rem, 9vw, 9rem) clamp(1rem, 5vw, 5.5rem);
   border-bottom: var(--line);
 }
@@ -570,32 +576,34 @@ h2 {
   text-align: right;
 }
 
-.agenda__more {
-  margin-top: 1.4rem;
-}
-
 .agenda__more[hidden] {
   display: none;
 }
 
 .program-note {
   display: flex;
-  justify-content: space-between;
-  gap: 1rem;
-  margin-top: 1.25rem;
+  align-items: center;
+  gap: 1rem 2rem;
+  flex-wrap: wrap;
+  margin-top: 2rem;
   font-size: 0.85rem;
   font-weight: 700;
 }
 
-.program-note a {
-  text-underline-offset: 0.22em;
+/* Stand rechtsbündig, auch wenn der Mehr-Button ausgeblendet ist */
+.program-note [data-agenda-updated] {
+  margin-left: auto;
 }
 
 .program-note__links {
   display: flex;
   align-items: center;
-  gap: 0.8rem 1.4rem;
+  gap: 1rem 1.6rem;
   flex-wrap: wrap;
+}
+
+.program-note__title {
+  margin: 2.6rem 0 1rem;
 }
 
 .about {
@@ -728,7 +736,7 @@ h2 {
 }
 
 .gallery {
-  padding-top: calc(5.4rem + clamp(3rem, 6vw, 5rem));
+  padding-top: calc(5.4rem + var(--safe-top) + clamp(3rem, 6vw, 5rem));
 }
 
 .gallery-grid {
@@ -777,7 +785,7 @@ h2 {
 
 .legal {
   max-width: 52rem;
-  padding: calc(5.4rem + clamp(3rem, 7vw, 6rem)) clamp(1rem, 5vw, 5.5rem) clamp(4rem, 8vw, 7rem);
+  padding: calc(5.4rem + var(--safe-top) + clamp(3rem, 7vw, 6rem)) clamp(1rem, 5vw, 5.5rem) clamp(4rem, 8vw, 7rem);
 }
 
 .legal h1 {
@@ -907,6 +915,12 @@ h2 {
 }
 
 @media (max-width: 1050px) {
+  .brand__sub {
+    display: block;
+    font-size: 0.8em;
+    opacity: 0.8;
+  }
+
   .hero {
     grid-template-columns: 1fr 0.78fr;
   }
@@ -926,7 +940,7 @@ h2 {
 
 @media (max-width: 780px) {
   .site-header {
-    height: 4.65rem;
+    height: calc(4.65rem + var(--safe-top));
   }
 
   .brand img {
@@ -1017,7 +1031,7 @@ h2 {
   .hero {
     grid-template-columns: 1fr;
     gap: 4rem;
-    padding-top: 8rem;
+    padding-top: calc(8rem + var(--safe-top));
   }
 
   .hero h1 {
@@ -1094,7 +1108,6 @@ h2 {
     width: 9.5rem;
   }
 
-  .brand span,
   .menu-button__label {
     display: none;
   }
@@ -1123,10 +1136,8 @@ h2 {
     font-size: clamp(4rem, 22vw, 6rem);
   }
 
-  .program-note,
   .site-footer {
     grid-template-columns: 1fr;
-    flex-direction: column;
   }
 
   .site-footer__legal {
