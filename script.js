@@ -65,12 +65,10 @@ function textWithLinks(className, text) {
   return node;
 }
 
-// Den Text, den Google Calendar automatisch für Meet-Links anhängt, nicht anzeigen
-const MEET_TEXT = [
-  /(Join with Google Meet|Mit Google Meet teilnehmen):?\s*https:\/\/meet\.google\.com\/\S+/gi,
-  /(Learn more about Meet at|Weitere Informationen zu Meet):?\s*https:\/\/support\.google\.com\/\S+/gi,
-];
-const cleanDescription = (text = "") => MEET_TEXT.reduce((t, re) => t.replace(re, ""), text).trim();
+// Den Text, den Google Calendar automatisch für Meet-Links anhängt, nicht anzeigen.
+// Die Sprache wechselt (Deutsch, Englisch, Spanisch …), deshalb: alles vom Satzanfang bis zum Meet-/Support-Link weg.
+const MEET_TEXT = /[^.!?\n]*https:\/\/(?:meet|support)\.google\.com\/\S+/gi;
+const cleanDescription = (text = "") => text.replace(MEET_TEXT, "").trim();
 
 function timeText(event) {
   if (event.allDay) return event.start === event.end ? "Ganztägig" : "Mehrtägig";
