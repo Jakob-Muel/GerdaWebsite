@@ -36,9 +36,11 @@ const dayKey = (date) => new Intl.DateTimeFormat("en-CA", { timeZone: TZ }).form
 const eventDays = (event) =>
   event.allDay ? [event.start, event.end] : [dayKey(new Date(event.start)), dayKey(new Date(event.end))];
 
-// Zum Testen, nur lokal: ?heute=2026-10-13 tut so, als wäre es dieser Tag (12 Uhr)
+// Zum Testen: ?heute=2026-10-13 tut so, als wäre es dieser Tag (12 Uhr).
+// Lokal immer aktiv; auf der echten Seite nur, solange TEST_DATE_ONLINE true ist.
+const TEST_DATE_ONLINE = true;
 const isLocal = ["localhost", "127.0.0.1", "[::1]"].includes(location.hostname);
-const testDay = isLocal ? new URLSearchParams(location.search).get("heute") : null;
+const testDay = isLocal || TEST_DATE_ONLINE ? new URLSearchParams(location.search).get("heute") : null;
 const getNow = () => (/^\d{4}-\d{2}-\d{2}$/.test(testDay ?? "") ? new Date(`${testDay}T10:00:00Z`) : new Date());
 
 function el(tag, className, text) {
@@ -96,7 +98,11 @@ function renderToday(event) {
   const template = kind && document.querySelector(`[data-today-art="${kind}"]`);
   const art = template?.content.firstElementChild?.cloneNode(true);
   if (art) {
-    item.append(art);
+    // Die Box bekommt die Höhe des Textes, die Zeichnung füllt sie rechtsbündig
+    art.setAttribute("preserveAspectRatio", "xMaxYMid meet");
+    const box = el("div", "today-art");
+    box.append(art);
+    item.append(box);
     if (reduceMotion.matches) art.pauseAnimations?.();
   }
 

@@ -422,7 +422,7 @@ h2 {
   border: var(--line);
   border-radius: var(--radius);
   box-shadow: 0.6rem 0.6rem 0 var(--wine);
-  grid-template-areas: "head art" "head text";
+  grid-template-areas: "head art" "text text";
 }
 
 .today-item__label {
@@ -467,7 +467,7 @@ h2 {
   grid-column: 1 / -1;
 }
 
-.today-item > div {
+.today-item > div:first-child {
   grid-area: head;
 }
 
@@ -475,14 +475,19 @@ h2 {
   grid-template-areas: "head art";
 }
 
+/* Der Text bestimmt die Höhe der Karte, das Icon füllt genau diese Höhe */
 .today-art {
+  position: relative;
   grid-area: art;
-  justify-self: end;
-  align-self: center;
-  width: clamp(10rem, 22vw, 15rem);
-  height: auto;
-  max-height: 11rem;
+  align-self: stretch;
   color: var(--ink);
+}
+
+.today-art svg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
   overflow: visible;
 }
 
@@ -1044,15 +1049,6 @@ h2 {
     grid-template-columns: 4rem minmax(0, 1fr);
   }
 
-  .today-item {
-    grid-template-columns: minmax(0, 1fr) auto;
-    grid-template-areas: "head art" "text text";
-  }
-
-  .today-art {
-    width: clamp(8rem, 24vw, 11rem);
-  }
-
   .agenda-item__meta {
     grid-column: 2;
     justify-items: start;
@@ -1094,9 +1090,10 @@ h2 {
     grid-template-areas: "art" "head" "text";
   }
 
-  .today-art {
-    justify-self: start;
+  .today-art svg {
+    position: static;
     width: 9.5rem;
+    height: auto;
   }
 
   .menu-button__label {
