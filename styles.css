@@ -1126,6 +1126,17 @@ h2 {
     font-size: clamp(4rem, 22vw, 6rem);
   }
 
+  /* Mobil: erst "Stand", darunter der Mehr-Button, beides linksbündig */
+  .program-note {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .program-note [data-agenda-updated] {
+    order: -1;
+    margin-left: 0;
+  }
+
   .site-footer {
     grid-template-columns: 1fr;
   }
