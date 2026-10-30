@@ -9,8 +9,6 @@
   --yellow: #f4d45d;
   --white: #fffdf7;
   --line: 2px solid var(--ink);
-  /* iPhone: Bereich hinter der Statusleiste, die Seite läuft dort sonst sichtbar durch */
-  --safe-top: env(safe-area-inset-top, 0px);
   --radius: 1.25rem;
   --display: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   --sans: "Arial", "Helvetica Neue", sans-serif;
@@ -21,6 +19,7 @@
 }
 
 body {
+  position: relative;
   margin: 0;
   color: var(--ink);
   background: var(--cream);
@@ -28,8 +27,10 @@ body {
   overflow-x: hidden;
 }
 
+/* Körnung scrollt mit: eine feste Ebene über dem Header bringt Safari
+   durcheinander, dann läuft die Seite hinter der Statusleiste sichtbar durch */
 body::before {
-  position: fixed;
+  position: absolute;
   inset: 0;
   z-index: 20;
   pointer-events: none;
@@ -79,22 +80,11 @@ button {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: calc(5.4rem + var(--safe-top));
-  padding: calc(0.65rem + var(--safe-top)) clamp(1rem, 3vw, 3.5rem) 0.65rem;
+  height: 5.4rem;
+  padding: 0.65rem clamp(1rem, 3vw, 3.5rem);
   color: var(--cream);
   background: var(--ink);
   border-bottom: 1px solid rgba(246, 239, 219, 0.25);
-}
-
-/* Dunkle Fläche über dem Header, damit beim Überscrollen auf dem Handy nichts durchscheint */
-.site-header::before {
-  position: absolute;
-  bottom: 100%;
-  left: 0;
-  right: 0;
-  height: 100vh;
-  content: "";
-  background: var(--ink);
 }
 
 .brand {
@@ -140,7 +130,7 @@ button {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(22rem, 0.86fr);
   min-height: 100svh;
-  padding: calc(clamp(8rem, 13vw, 10rem) + var(--safe-top)) clamp(1rem, 5vw, 5.5rem) 6.5rem;
+  padding: clamp(8rem, 13vw, 10rem) clamp(1rem, 5vw, 5.5rem) 6.5rem;
   color: var(--cream);
   background: var(--wine);
   border-bottom: var(--line);
@@ -375,7 +365,7 @@ h2 {
 }
 
 .section {
-  scroll-margin-top: calc(5.4rem + var(--safe-top));
+  scroll-margin-top: 5.4rem;
   padding: clamp(5rem, 9vw, 9rem) clamp(1rem, 5vw, 5.5rem);
   border-bottom: var(--line);
 }
@@ -736,7 +726,7 @@ h2 {
 }
 
 .gallery {
-  padding-top: calc(5.4rem + var(--safe-top) + clamp(3rem, 6vw, 5rem));
+  padding-top: calc(5.4rem + clamp(3rem, 6vw, 5rem));
 }
 
 .gallery-grid {
@@ -785,7 +775,7 @@ h2 {
 
 .legal {
   max-width: 52rem;
-  padding: calc(5.4rem + var(--safe-top) + clamp(3rem, 7vw, 6rem)) clamp(1rem, 5vw, 5.5rem) clamp(4rem, 8vw, 7rem);
+  padding: calc(5.4rem + clamp(3rem, 7vw, 6rem)) clamp(1rem, 5vw, 5.5rem) clamp(4rem, 8vw, 7rem);
 }
 
 .legal h1 {
@@ -940,7 +930,7 @@ h2 {
 
 @media (max-width: 780px) {
   .site-header {
-    height: calc(4.65rem + var(--safe-top));
+    height: 4.65rem;
   }
 
   .brand img {
@@ -1031,7 +1021,7 @@ h2 {
   .hero {
     grid-template-columns: 1fr;
     gap: 4rem;
-    padding-top: calc(8rem + var(--safe-top));
+    padding-top: 8rem;
   }
 
   .hero h1 {
