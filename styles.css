@@ -475,12 +475,13 @@ h2 {
   grid-template-areas: "head art";
 }
 
-.talk-art {
+.today-art {
   grid-area: art;
   justify-self: end;
   align-self: center;
   width: clamp(10rem, 22vw, 15rem);
   height: auto;
+  max-height: 11rem;
   color: var(--ink);
   overflow: visible;
 }
@@ -1048,7 +1049,7 @@ h2 {
     grid-template-areas: "head art" "text text";
   }
 
-  .talk-art {
+  .today-art {
     width: clamp(8rem, 24vw, 11rem);
   }
 
@@ -1093,7 +1094,7 @@ h2 {
     grid-template-areas: "art" "head" "text";
   }
 
-  .talk-art {
+  .today-art {
     justify-self: start;
     width: 9.5rem;
   }

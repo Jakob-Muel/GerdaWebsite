@@ -17,7 +17,6 @@ const agenda = document.querySelector("[data-agenda]");
 const today = document.querySelector("[data-today]");
 const moreButton = document.querySelector("[data-agenda-more]");
 const updatedNote = document.querySelector("[data-agenda-updated]");
-const todayArt = document.querySelector("[data-today-art]");
 const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
 const PAGE_SIZE = 10;
 const TZ = "Europe/Berlin";
@@ -91,9 +90,11 @@ function renderToday(event) {
   head.append(meta);
   item.append(head);
 
-  // Kleine Animation beim Plenum: Leute im Gespräch, die Sprechblase wandert zwischen ihnen
-  const isPlenum = /plenum/i.test(`${event.tag} ${event.title}`);
-  const art = isPlenum && todayArt?.content.firstElementChild?.cloneNode(true);
+  // Kleine Animation je nach Termin: Plenum (Leute im Gespräch), Film (Projektor)
+  const text = `${event.tag} ${event.title}`;
+  const kind = /plenum/i.test(text) ? "plenum" : /film/i.test(text) ? "film" : null;
+  const template = kind && document.querySelector(`[data-today-art="${kind}"]`);
+  const art = template?.content.firstElementChild?.cloneNode(true);
   if (art) {
     item.append(art);
     if (reduceMotion.matches) art.pauseAnimations?.();
