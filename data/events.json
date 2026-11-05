@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-04T21:55:32.847Z",
+  "updated": "2026-11-05T02:31:11.921Z",
   "events": [
     {
       "title": "Garage",
@@ -394,6 +394,15 @@
       "allDay": false,
       "start": "2027-02-03T17:30:00.000Z",
       "end": "2027-02-03T19:30:00.000Z",
+      "location": "",
+      "description": ""
+    },
+    {
+      "title": "Garage",
+      "tag": "PubQuiz",
+      "allDay": false,
+      "start": "2027-02-04T18:00:00.000Z",
+      "end": "2027-02-04T22:00:00.000Z",
       "location": "",
       "description": ""
     }
