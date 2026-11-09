@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-08T22:55:32.230Z",
+  "updated": "2026-11-09T02:42:16.527Z",
   "events": [
     {
       "title": "Jakkolo Garage",
@@ -376,6 +376,15 @@
       "allDay": false,
       "start": "2027-02-04T18:00:00.000Z",
       "end": "2027-02-04T22:00:00.000Z",
+      "location": "",
+      "description": ""
+    },
+    {
+      "title": "Film Garage",
+      "tag": "",
+      "allDay": false,
+      "start": "2027-02-08T18:00:00.000Z",
+      "end": "2027-02-08T21:00:00.000Z",
       "location": "",
       "description": ""
     }
