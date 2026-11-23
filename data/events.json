@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-22T21:51:33.420Z",
+  "updated": "2026-11-23T02:51:41.706Z",
   "events": [
     {
       "title": "Allgemeines Plenum",
@@ -358,6 +358,15 @@
       "allDay": false,
       "start": "2027-02-18T18:00:00.000Z",
       "end": "2027-02-18T22:00:00.000Z",
+      "location": "",
+      "description": ""
+    },
+    {
+      "title": "Film Garage",
+      "tag": "",
+      "allDay": false,
+      "start": "2027-02-22T18:00:00.000Z",
+      "end": "2027-02-22T21:00:00.000Z",
       "location": "",
       "description": ""
     }
