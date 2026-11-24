@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-23T12:58:48.741Z",
+  "updated": "2026-11-24T00:57:53.804Z",
   "events": [
     {
       "title": "Allgemeines Plenum",
@@ -182,13 +182,13 @@
       "description": ""
     },
     {
-      "title": "Allgemeines Plenum",
+      "title": "Plenum [Mitglieder]",
       "tag": "",
       "allDay": false,
       "start": "2027-01-05T17:00:00.000Z",
       "end": "2027-01-05T18:00:00.000Z",
       "location": "",
-      "description": ""
+      "description": "Absprache anstehender Veranstaltungen, Austausch für Unterstützung und Vereinsvorgehen"
     },
     {
       "title": "Fahrrad Garage",
@@ -227,13 +227,13 @@
       "description": ""
     },
     {
-      "title": "Allgemeines Plenum",
+      "title": "Offene Garage",
       "tag": "",
       "allDay": false,
       "start": "2027-01-19T17:00:00.000Z",
       "end": "2027-01-19T18:00:00.000Z",
       "location": "",
-      "description": ""
+      "description": "Offene Garage zum Chillen, Quatschen und die Garage kennenlernen"
     },
     {
       "title": "Fahrrad Garage",
@@ -250,15 +250,6 @@
       "allDay": false,
       "start": "2027-01-21T18:00:00.000Z",
       "end": "2027-01-21T22:00:00.000Z",
-      "location": "",
-      "description": ""
-    },
-    {
-      "title": "Literatur Garage",
-      "tag": "",
-      "allDay": false,
-      "start": "2027-01-24T16:00:00.000Z",
-      "end": "2027-01-24T19:30:00.000Z",
       "location": "",
       "description": ""
     },
@@ -290,13 +281,22 @@
       "description": ""
     },
     {
-      "title": "Allgemeines Plenum",
+      "title": "Literatur Garage",
+      "tag": "",
+      "allDay": false,
+      "start": "2027-01-31T16:00:00.000Z",
+      "end": "2027-01-31T19:30:00.000Z",
+      "location": "",
+      "description": ""
+    },
+    {
+      "title": "Plenum [Mitglieder]",
       "tag": "",
       "allDay": false,
       "start": "2027-02-02T17:00:00.000Z",
       "end": "2027-02-02T18:00:00.000Z",
       "location": "",
-      "description": ""
+      "description": "Absprache anstehender Veranstaltungen, Austausch für Unterstützung und Vereinsvorgehen"
     },
     {
       "title": "Fahrrad Garage",
@@ -335,13 +335,13 @@
       "description": ""
     },
     {
-      "title": "Allgemeines Plenum",
+      "title": "Offene Garage",
       "tag": "",
       "allDay": false,
       "start": "2027-02-16T17:00:00.000Z",
       "end": "2027-02-16T18:00:00.000Z",
       "location": "",
-      "description": ""
+      "description": "Offene Garage zum Chillen, Quatschen und die Garage kennenlernen"
     },
     {
       "title": "Fahrrad Garage",
