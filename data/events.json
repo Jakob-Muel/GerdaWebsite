@@ -1,15 +1,6 @@
 {
-  "updated": "2026-11-24T11:01:26.114Z",
+  "updated": "2026-11-24T21:18:29.780Z",
   "events": [
-    {
-      "title": "Allgemeines Plenum",
-      "tag": "",
-      "allDay": false,
-      "start": "2026-11-24T17:00:00.000Z",
-      "end": "2026-11-24T18:00:00.000Z",
-      "location": "",
-      "description": "Join with Google Meet: https://meet.google.com/ovv-nubf-ico Learn more about Meet at: https://support.google.com/a/users/answer/9282720"
-    },
     {
       "title": "1 Weihnachstsgarage",
       "tag": "",
@@ -65,13 +56,13 @@
       "description": ""
     },
     {
-      "title": "Allgemeines Plenum",
+      "title": "Offenes Wohnzimmer+ Siebdruck",
       "tag": "",
       "allDay": false,
       "start": "2026-12-08T17:00:00.000Z",
-      "end": "2026-12-08T18:00:00.000Z",
+      "end": "2026-12-08T19:00:00.000Z",
       "location": "",
-      "description": "Join with Google Meet: https://meet.google.com/ovv-nubf-ico Learn more about Meet at: https://support.google.com/a/users/answer/9282720"
+      "description": ""
     },
     {
       "title": "Fahrrad Garage",
@@ -205,6 +196,15 @@
       "allDay": false,
       "start": "2027-01-07T18:00:00.000Z",
       "end": "2027-01-07T22:00:00.000Z",
+      "location": "",
+      "description": ""
+    },
+    {
+      "title": "Kirchenrave mit GerdasGarage",
+      "tag": "",
+      "allDay": false,
+      "start": "2027-01-09T17:00:00.000Z",
+      "end": "2027-01-09T22:00:00.000Z",
       "location": "",
       "description": ""
     },
