@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-25T04:54:49.408Z",
+  "updated": "2026-11-25T15:42:04.876Z",
   "events": [
     {
       "title": "1 Weihnachstsgarage",
@@ -11,7 +11,7 @@
       "description": ""
     },
     {
-      "title": "SpieleAbend",
+      "title": "Gerdas wilder Spielabend",
       "tag": "",
       "allDay": false,
       "start": "2026-11-26T17:00:00.000Z",
@@ -20,8 +20,8 @@
       "description": ""
     },
     {
-      "title": "Film Garage",
-      "tag": "",
+      "title": "Weihnachtsspecial",
+      "tag": "Film Garage",
       "allDay": false,
       "start": "2026-11-30T18:00:00.000Z",
       "end": "2026-11-30T21:00:00.000Z",
@@ -38,17 +38,17 @@
       "description": ""
     },
     {
-      "title": "Weihnachtsspecial",
-      "tag": "LiveMusik Garage",
+      "title": "Weihnachtskonzert",
+      "tag": "",
       "allDay": false,
-      "start": "2026-12-03T18:30:00.000Z",
+      "start": "2026-12-03T18:00:00.000Z",
       "end": "2026-12-03T21:00:00.000Z",
       "location": "",
       "description": ""
     },
     {
-      "title": "Literatur Garage",
-      "tag": "",
+      "title": "Winterlich",
+      "tag": "Literatur Garage",
       "allDay": false,
       "start": "2026-12-05T14:00:00.000Z",
       "end": "2026-12-05T17:00:00.000Z",
@@ -83,7 +83,7 @@
       "description": ""
     },
     {
-      "title": "Wird noch veröffentlicht.",
+      "title": "Gerdas alternativer Weihnachtsmarkt",
       "tag": "",
       "allDay": false,
       "start": "2026-12-10T17:00:00.000Z",
@@ -92,8 +92,8 @@
       "description": ""
     },
     {
-      "title": "Film Garage",
-      "tag": "",
+      "title": "Weihnachtsgarage",
+      "tag": "Film Garage",
       "allDay": false,
       "start": "2026-12-14T18:00:00.000Z",
       "end": "2026-12-14T21:00:00.000Z",
@@ -119,7 +119,7 @@
       "description": ""
     },
     {
-      "title": "WeihnachtsParty",
+      "title": "Weihnachtsfeier",
       "tag": "",
       "allDay": false,
       "start": "2026-12-17T17:00:00.000Z",
