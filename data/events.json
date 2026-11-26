@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-26T00:27:35.910Z",
+  "updated": "2026-11-26T19:40:59.342Z",
   "events": [
     {
       "title": "1 Weihnachstsgarage",
@@ -65,15 +65,6 @@
       "description": ""
     },
     {
-      "title": "Fahrrad Garage",
-      "tag": "",
-      "allDay": false,
-      "start": "2026-12-09T17:30:00.000Z",
-      "end": "2026-12-09T19:30:00.000Z",
-      "location": "",
-      "description": ""
-    },
-    {
       "title": "3 Weihnachtsgarage",
       "tag": "",
       "allDay": true,
@@ -97,15 +88,6 @@
       "allDay": false,
       "start": "2026-12-14T18:00:00.000Z",
       "end": "2026-12-14T21:00:00.000Z",
-      "location": "",
-      "description": ""
-    },
-    {
-      "title": "Fahrrad Garage",
-      "tag": "",
-      "allDay": false,
-      "start": "2026-12-16T17:30:00.000Z",
-      "end": "2026-12-16T19:30:00.000Z",
       "location": "",
       "description": ""
     },
@@ -137,29 +119,11 @@
       "description": ""
     },
     {
-      "title": "Fahrrad Garage",
-      "tag": "",
-      "allDay": false,
-      "start": "2026-12-23T17:30:00.000Z",
-      "end": "2026-12-23T19:30:00.000Z",
-      "location": "",
-      "description": ""
-    },
-    {
       "title": "Film Garage",
       "tag": "",
       "allDay": false,
       "start": "2026-12-28T18:00:00.000Z",
       "end": "2026-12-28T21:00:00.000Z",
-      "location": "",
-      "description": ""
-    },
-    {
-      "title": "Fahrrad Garage",
-      "tag": "",
-      "allDay": false,
-      "start": "2026-12-30T17:30:00.000Z",
-      "end": "2026-12-30T19:30:00.000Z",
       "location": "",
       "description": ""
     },
@@ -171,15 +135,6 @@
       "end": "2027-01-05T18:00:00.000Z",
       "location": "",
       "description": "Absprache anstehender Veranstaltungen, Austausch für Unterstützung und Vereinsvorgehen"
-    },
-    {
-      "title": "Fahrrad Garage",
-      "tag": "",
-      "allDay": false,
-      "start": "2027-01-06T17:30:00.000Z",
-      "end": "2027-01-06T19:30:00.000Z",
-      "location": "",
-      "description": ""
     },
     {
       "title": "Garage",
@@ -209,15 +164,6 @@
       "description": ""
     },
     {
-      "title": "Fahrrad Garage",
-      "tag": "",
-      "allDay": false,
-      "start": "2027-01-13T17:30:00.000Z",
-      "end": "2027-01-13T19:30:00.000Z",
-      "location": "",
-      "description": ""
-    },
-    {
       "title": "Offene Garage",
       "tag": "",
       "allDay": false,
@@ -225,15 +171,6 @@
       "end": "2027-01-19T20:00:00.000Z",
       "location": "",
       "description": "Offene Garage zum Chillen, Quatschen und die Garage kennenlernen"
-    },
-    {
-      "title": "Fahrrad Garage",
-      "tag": "",
-      "allDay": false,
-      "start": "2027-01-20T17:30:00.000Z",
-      "end": "2027-01-20T19:30:00.000Z",
-      "location": "",
-      "description": ""
     },
     {
       "title": "Garage",
@@ -250,15 +187,6 @@
       "allDay": false,
       "start": "2027-01-25T18:00:00.000Z",
       "end": "2027-01-25T21:00:00.000Z",
-      "location": "",
-      "description": ""
-    },
-    {
-      "title": "Fahrrad Garage",
-      "tag": "",
-      "allDay": false,
-      "start": "2027-01-27T17:30:00.000Z",
-      "end": "2027-01-27T19:30:00.000Z",
       "location": "",
       "description": ""
     },
@@ -290,15 +218,6 @@
       "description": "Absprache anstehender Veranstaltungen, Austausch für Unterstützung und Vereinsvorgehen"
     },
     {
-      "title": "Fahrrad Garage",
-      "tag": "",
-      "allDay": false,
-      "start": "2027-02-03T17:30:00.000Z",
-      "end": "2027-02-03T19:30:00.000Z",
-      "location": "",
-      "description": ""
-    },
-    {
       "title": "Garage",
       "tag": "PubQuiz",
       "allDay": false,
@@ -317,15 +236,6 @@
       "description": ""
     },
     {
-      "title": "Fahrrad Garage",
-      "tag": "",
-      "allDay": false,
-      "start": "2027-02-10T17:30:00.000Z",
-      "end": "2027-02-10T19:30:00.000Z",
-      "location": "",
-      "description": ""
-    },
-    {
       "title": "Offene Garage",
       "tag": "",
       "allDay": false,
@@ -333,15 +243,6 @@
       "end": "2027-02-16T20:00:00.000Z",
       "location": "",
       "description": "Offene Garage zum Chillen, Quatschen und die Garage kennenlernen"
-    },
-    {
-      "title": "Fahrrad Garage",
-      "tag": "",
-      "allDay": false,
-      "start": "2027-02-17T17:30:00.000Z",
-      "end": "2027-02-17T19:30:00.000Z",
-      "location": "",
-      "description": ""
     },
     {
       "title": "Garage",
@@ -358,15 +259,6 @@
       "allDay": false,
       "start": "2027-02-22T18:00:00.000Z",
       "end": "2027-02-22T21:00:00.000Z",
-      "location": "",
-      "description": ""
-    },
-    {
-      "title": "Fahrrad Garage",
-      "tag": "",
-      "allDay": false,
-      "start": "2027-02-24T17:30:00.000Z",
-      "end": "2027-02-24T19:30:00.000Z",
       "location": "",
       "description": ""
     },
