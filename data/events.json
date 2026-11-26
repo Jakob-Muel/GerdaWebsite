@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-25T15:42:04.876Z",
+  "updated": "2026-11-26T00:27:35.910Z",
   "events": [
     {
       "title": "1 Weihnachstsgarage",
@@ -56,7 +56,7 @@
       "description": ""
     },
     {
-      "title": "Offenes Wohnzimmer+ Siebdruck",
+      "title": "Offene Garage + Siebdruck",
       "tag": "",
       "allDay": false,
       "start": "2026-12-08T17:00:00.000Z",
@@ -128,11 +128,11 @@
       "description": ""
     },
     {
-      "title": "Allgemeines Plenum",
-      "tag": "",
+      "title": "Anmeldung erforderlich",
+      "tag": "Pralinen Workshop",
       "allDay": false,
-      "start": "2026-12-22T17:00:00.000Z",
-      "end": "2026-12-22T18:00:00.000Z",
+      "start": "2026-12-19T12:00:00.000Z",
+      "end": "2026-12-19T14:00:00.000Z",
       "location": "",
       "description": ""
     },
@@ -142,15 +142,6 @@
       "allDay": false,
       "start": "2026-12-23T17:30:00.000Z",
       "end": "2026-12-23T19:30:00.000Z",
-      "location": "",
-      "description": ""
-    },
-    {
-      "title": "Schach-Garage",
-      "tag": "",
-      "allDay": false,
-      "start": "2026-12-24T18:00:00.000Z",
-      "end": "2026-12-24T21:00:00.000Z",
       "location": "",
       "description": ""
     },
@@ -200,8 +191,8 @@
       "description": ""
     },
     {
-      "title": "Kirchenrave mit GerdasGarage",
-      "tag": "",
+      "title": "mit GerdasGarage",
+      "tag": "Kirchenrave",
       "allDay": false,
       "start": "2027-01-09T17:00:00.000Z",
       "end": "2027-01-09T22:00:00.000Z",
@@ -231,7 +222,7 @@
       "tag": "",
       "allDay": false,
       "start": "2027-01-19T17:00:00.000Z",
-      "end": "2027-01-19T18:00:00.000Z",
+      "end": "2027-01-19T20:00:00.000Z",
       "location": "",
       "description": "Offene Garage zum Chillen, Quatschen und die Garage kennenlernen"
     },
@@ -339,7 +330,7 @@
       "tag": "",
       "allDay": false,
       "start": "2027-02-16T17:00:00.000Z",
-      "end": "2027-02-16T18:00:00.000Z",
+      "end": "2027-02-16T20:00:00.000Z",
       "location": "",
       "description": "Offene Garage zum Chillen, Quatschen und die Garage kennenlernen"
     },
@@ -376,6 +367,24 @@
       "allDay": false,
       "start": "2027-02-24T17:30:00.000Z",
       "end": "2027-02-24T19:30:00.000Z",
+      "location": "",
+      "description": ""
+    },
+    {
+      "title": "Schach Garage",
+      "tag": "",
+      "allDay": false,
+      "start": "2027-02-25T17:00:00.000Z",
+      "end": "2027-02-25T21:00:00.000Z",
+      "location": "",
+      "description": ""
+    },
+    {
+      "title": "Schach-Garage",
+      "tag": "",
+      "allDay": false,
+      "start": "2027-02-25T18:00:00.000Z",
+      "end": "2027-02-25T21:00:00.000Z",
       "location": "",
       "description": ""
     }
