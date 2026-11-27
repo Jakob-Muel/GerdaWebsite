@@ -1,24 +1,6 @@
 {
-  "updated": "2026-11-26T19:40:59.342Z",
+  "updated": "2026-11-27T02:54:33.482Z",
   "events": [
-    {
-      "title": "1 Weihnachstsgarage",
-      "tag": "",
-      "allDay": true,
-      "start": "2026-11-26",
-      "end": "2026-11-26",
-      "location": "",
-      "description": ""
-    },
-    {
-      "title": "Gerdas wilder Spielabend",
-      "tag": "",
-      "allDay": false,
-      "start": "2026-11-26T17:00:00.000Z",
-      "end": "2026-11-26T21:00:00.000Z",
-      "location": "",
-      "description": ""
-    },
     {
       "title": "Weihnachtsspecial",
       "tag": "Film Garage",
