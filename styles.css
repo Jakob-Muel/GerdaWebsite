@@ -910,6 +910,95 @@ h2 {
   text-underline-offset: 0.2em;
 }
 
+/* Wettereffekte (weather.js): fester Canvas über den farbigen Section-Hintergründen,
+   aber unter allen Inhalten und unter dem Header (siehe Safari-Statusleiste) */
+.weather {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.weather[hidden] {
+  display: none;
+}
+
+/* Inhalte über den Schnee heben, ohne die Sections selbst zu Ebenen zu machen.
+   :where() hat keine Spezifität, eigene position/z-index-Regeln gewinnen. */
+:where(main > section, main.gallery, main.legal, .site-footer) > * {
+  position: relative;
+  z-index: 1;
+}
+
+.site-header {
+  gap: clamp(1rem, 2.5vw, 2.4rem);
+}
+
+.site-header > :first-child {
+  margin-right: auto;
+}
+
+.weather-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.3rem;
+  color: var(--cream);
+  background: none;
+  border: 0;
+  border-radius: 999px;
+  cursor: pointer;
+}
+
+.weather-toggle__icon {
+  width: 1.7rem;
+  height: 1.7rem;
+  opacity: 0.55;
+  transition: opacity 160ms ease;
+}
+
+.weather-toggle__track {
+  position: relative;
+  width: 2.4rem;
+  height: 1.35rem;
+  border: 2px solid currentColor;
+  border-radius: 999px;
+  transition: background 160ms ease;
+}
+
+.weather-toggle__thumb {
+  position: absolute;
+  top: 50%;
+  left: 0.18rem;
+  width: 0.8rem;
+  height: 0.8rem;
+  background: currentColor;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  transition: transform 160ms ease, background 160ms ease;
+}
+
+.weather-toggle[aria-checked="true"] .weather-toggle__icon {
+  opacity: 1;
+}
+
+.weather-toggle[aria-checked="true"] .weather-toggle__track {
+  background: var(--pink);
+  border-color: var(--pink);
+}
+
+.weather-toggle[aria-checked="true"] .weather-toggle__thumb {
+  background: var(--ink);
+  transform: translate(0.99rem, -50%);
+}
+
+.weather-toggle:focus-visible {
+  outline: 2px solid var(--pink);
+  outline-offset: 2px;
+}
+
 @media (max-width: 1050px) {
   .brand__sub {
     display: block;
@@ -944,6 +1033,7 @@ h2 {
   }
 
   .menu-button {
+    order: 1;
     display: flex;
     align-items: center;
     gap: 0.8rem;
